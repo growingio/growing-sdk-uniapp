@@ -15,7 +15,6 @@ MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/shenliming/.grad
 MERGED from [com.facebook.fresco:fresco:1.13.0] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/29481d49fd7724fb53ea6e0f929c9eab/fresco-1.13.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:animated-gif:1.13.0] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/ef8ab90be3238996a0dd57cad3f005f1/animated-gif-1.13.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/9d51b4c1e0f136dc5738ce390dc5bf74/glide-4.9.0/AndroidManifest.xml:2:1-12:12
-MERGED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:1:1-14:12
 MERGED from [com.android.support:support-media-compat:28.0.0] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/0c987097f99e7a4335b18a4229188bcc/support-media-compat-28.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/fbfb7c7ced2dd9c7976f805e2a51d90e/support-fragment-28.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/31701eb015b15d8e281e57b98ad9b8fb/animated-vector-drawable-28.0.0/AndroidManifest.xml:17:1-22:12
@@ -117,8 +116,6 @@ MERGED from [uniapp-v8-release.aar] /Users/shenliming/.gradle/caches/transforms-
 MERGED from [uniapp-v8-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/44aeb90ef51cb3916df69db6b325a01c/uniapp-v8-release/AndroidManifest.xml:29:5-35:19
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/9d51b4c1e0f136dc5738ce390dc5bf74/glide-4.9.0/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/9d51b4c1e0f136dc5738ce390dc5bf74/glide-4.9.0/AndroidManifest.xml:10:5-20
-MERGED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:9:5-13:19
-MERGED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:9:5-13:19
 MERGED from [com.android.support:support-compat:28.0.0] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/49dd2c14dcc57c7f4a0aa1d53483e871/support-compat-28.0.0/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/49dd2c14dcc57c7f4a0aa1d53483e871/support-compat-28.0.0/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/12a7da1d020b5d39bae909480b3a5d2b/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
@@ -367,14 +364,10 @@ INJECTED from /Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-And
 		INJECTED from /Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from [lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:17:5-67
-MERGED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:4:5-66
-MERGED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:4:5-66
 	android:name
 		ADDED from [lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:17:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:18:5-79
-MERGED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:5:5-78
-MERGED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:5:5-78
 	android:name
 		ADDED from [lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:18:22-76
 uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
@@ -535,17 +528,3 @@ uses-permission#freemme.permission.msa
 ADDED from [oaid_sdk_1.0.25.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/9271941fd6d2b4b31837d3249f6a0c94/oaid_sdk_1.0.25/AndroidManifest.xml:15:5-62
 	android:name
 		ADDED from [oaid_sdk_1.0.25.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/9271941fd6d2b4b31837d3249f6a0c94/oaid_sdk_1.0.25/AndroidManifest.xml:15:22-59
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:6:5-75
-	android:name
-		ADDED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:6:22-73
-uses-permission#android.permission.READ_PHONE_STATE
-ADDED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:7:5-75
-	android:name
-		ADDED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:7:22-72
-provider#com.growingio.android.sdk.collection.GrowingIOSettingsProvider
-ADDED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:10:9-12:92
-	android:authorities
-		ADDED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:11:13-77
-	android:name
-		ADDED from [com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:12:13-90

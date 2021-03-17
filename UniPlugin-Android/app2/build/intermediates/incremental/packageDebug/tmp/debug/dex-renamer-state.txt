@@ -1,4 +1,4 @@
-#Wed Mar 17 18:46:39 CST 2021
+#Wed Mar 17 19:18:16 CST 2021
 base.0=/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/build/intermediates/dex/debug/minifyDebugWithR8/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

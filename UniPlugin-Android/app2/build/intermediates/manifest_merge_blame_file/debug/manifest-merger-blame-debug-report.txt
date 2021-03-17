@@ -76,350 +76,337 @@
 44    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
 44-->[oaid_sdk_1.0.25.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/9271941fd6d2b4b31837d3249f6a0c94/oaid_sdk_1.0.25/AndroidManifest.xml:13:5-76
 44-->[oaid_sdk_1.0.25.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/9271941fd6d2b4b31837d3249f6a0c94/oaid_sdk_1.0.25/AndroidManifest.xml:13:22-73
-45    <uses-permission android:name="freemme.permission.msa" />
+45    <uses-permission android:name="freemme.permission.msa" /> <!-- Barcode(二维码)  end -->
 45-->[oaid_sdk_1.0.25.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/9271941fd6d2b4b31837d3249f6a0c94/oaid_sdk_1.0.25/AndroidManifest.xml:15:5-62
 45-->[oaid_sdk_1.0.25.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/9271941fd6d2b4b31837d3249f6a0c94/oaid_sdk_1.0.25/AndroidManifest.xml:15:22-59
-46    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-46-->[com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:6:5-75
-46-->[com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:6:22-73
-47    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- Barcode(二维码)  end -->
-47-->[com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:7:5-75
-47-->[com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:7:22-72
-48    <application
-48-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:23:5-105:19
-49        android:name="io.dcloud.application.DCloudApplication"
-49-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:24:9-63
-50        android:allowBackup="true"
-50-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:25:9-35
-51        android:allowClearUserData="true"
-51-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:26:9-42
-52        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
-52-->[com.android.support:support-compat:28.0.0] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/49dd2c14dcc57c7f4a0aa1d53483e871/support-compat-28.0.0/AndroidManifest.xml:22:18-91
-53        android:debuggable="true"
-53-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:27:9-34
-54        android:icon="@drawable/icon"
-54-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:28:9-38
-55        android:label="@string/app_name"
-55-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:29:9-41
-56        android:largeHeap="true"
-56-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:30:9-33
-57        android:supportsRtl="true"
-57-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:31:9-35
-58        android:testOnly="true"
-59        android:usesCleartextTraffic="true" >
-59-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:167:9-44
-60
-61        <!-- 应用入口 -->
-62        <activity
-62-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:34:9-56:20
-63            android:name="io.dcloud.PandoraEntry"
-63-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:35:13-50
-64            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale"
-64-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:36:13-92
-65            android:hardwareAccelerated="true"
-65-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:37:13-47
-66            android:theme="@style/TranslucentTheme"
-66-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:38:13-52
-67            android:windowSoftInputMode="adjustResize" >
-67-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:39:13-55
-68            <intent-filter>
-68-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:40:13-46:29
-69                <data android:scheme="hbuilder" />
-69-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:17-51
-69-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:23-48
+46    <application
+46-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:23:5-105:19
+47        android:name="io.dcloud.application.DCloudApplication"
+47-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:24:9-63
+48        android:allowBackup="true"
+48-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:25:9-35
+49        android:allowClearUserData="true"
+49-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:26:9-42
+50        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+50-->[com.android.support:support-compat:28.0.0] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/49dd2c14dcc57c7f4a0aa1d53483e871/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+51        android:debuggable="true"
+51-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:27:9-34
+52        android:icon="@drawable/icon"
+52-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:28:9-38
+53        android:label="@string/app_name"
+53-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:29:9-41
+54        android:largeHeap="true"
+54-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:30:9-33
+55        android:supportsRtl="true"
+55-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:31:9-35
+56        android:testOnly="true"
+57        android:usesCleartextTraffic="true" >
+57-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:167:9-44
+58
+59        <!-- 应用入口 -->
+60        <activity
+60-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:34:9-56:20
+61            android:name="io.dcloud.PandoraEntry"
+61-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:35:13-50
+62            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale"
+62-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:36:13-92
+63            android:hardwareAccelerated="true"
+63-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:37:13-47
+64            android:theme="@style/TranslucentTheme"
+64-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:38:13-52
+65            android:windowSoftInputMode="adjustResize" >
+65-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:39:13-55
+66            <intent-filter>
+66-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:40:13-46:29
+67                <data android:scheme="hbuilder" />
+67-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:17-51
+67-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:23-48
+68
+69                <action android:name="android.intent.action.VIEW" />
+69-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:42:17-69
+69-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:42:25-66
 70
-71                <action android:name="android.intent.action.VIEW" />
-71-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:42:17-69
-71-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:42:25-66
-72
-73                <category android:name="android.intent.category.DEFAULT" />
-73-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:44:17-76
-73-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:44:27-73
-74                <category android:name="android.intent.category.BROWSABLE" />
-74-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:45:17-78
-74-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:45:27-75
-75            </intent-filter>
-76            <intent-filter>
-76-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:47:13-51:29
-77                <data android:mimeType="image/*" />
-77-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:17-51
-77-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:48:23-49
+71                <category android:name="android.intent.category.DEFAULT" />
+71-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:44:17-76
+71-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:44:27-73
+72                <category android:name="android.intent.category.BROWSABLE" />
+72-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:45:17-78
+72-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:45:27-75
+73            </intent-filter>
+74            <intent-filter>
+74-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:47:13-51:29
+75                <data android:mimeType="image/*" />
+75-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:17-51
+75-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:48:23-49
+76
+77                <action android:name="android.intent.action.SEND" />
+77-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:49:17-69
+77-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:49:25-66
 78
-79                <action android:name="android.intent.action.SEND" />
-79-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:49:17-69
-79-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:49:25-66
-80
-81                <category android:name="android.intent.category.DEFAULT" />
-81-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:44:17-76
-81-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:44:27-73
-82            </intent-filter>
-83            <intent-filter>
-83-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:52:13-55:29
-84                <action android:name="android.intent.action.MAIN" />
-84-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:53:17-69
-84-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:53:25-66
-85
-86                <category android:name="android.intent.category.LAUNCHER" />
-86-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:54:17-77
-86-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:54:27-74
-87            </intent-filter>
-88        </activity>
-89
-90        <meta-data
-90-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:57:9-59:36
-91            android:name="dcloud_uninview_background"
-91-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:58:13-54
-92            android:value="true" />
-92-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:59:13-33
-93
-94        <!-- growingIO 配置设置开始 -->
-95        <meta-data
-95-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:62:9-64:48
-96            android:name="growing_android_account_id"
-96-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:63:13-54
-97            android:value="9a7f70313f66fb62" />
-97-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:64:13-45
-98        <meta-data
-98-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:66:9-68:56
-99            android:name="growing_android_url_scheme"
-99-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:67:13-54
-100            android:value="growing.4cf6e0a04c6a7b10" />
-100-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:68:13-53
-101        <meta-data
-101-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:70:9-72:36
-102            android:name="growing_android_debug"
-102-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:71:13-49
-103            android:value="true" />
-103-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:72:13-33
+79                <category android:name="android.intent.category.DEFAULT" />
+79-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:44:17-76
+79-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:44:27-73
+80            </intent-filter>
+81            <intent-filter>
+81-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:52:13-55:29
+82                <action android:name="android.intent.action.MAIN" />
+82-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:53:17-69
+82-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:53:25-66
+83
+84                <category android:name="android.intent.category.LAUNCHER" />
+84-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:54:17-77
+84-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:54:27-74
+85            </intent-filter>
+86        </activity>
+87
+88        <meta-data
+88-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:57:9-59:36
+89            android:name="dcloud_uninview_background"
+89-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:58:13-54
+90            android:value="true" />
+90-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:59:13-33
+91
+92        <!-- growingIO 配置设置开始 -->
+93        <meta-data
+93-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:62:9-64:48
+94            android:name="growing_android_account_id"
+94-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:63:13-54
+95            android:value="9a7f70313f66fb62" />
+95-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:64:13-45
+96        <meta-data
+96-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:66:9-68:56
+97            android:name="growing_android_url_scheme"
+97-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:67:13-54
+98            android:value="growing.4cf6e0a04c6a7b10" />
+98-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:68:13-53
+99        <meta-data
+99-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:70:9-72:36
+100            android:name="growing_android_debug"
+100-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:71:13-49
+101            android:value="true" />
+101-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:72:13-33
+102
+103        <!-- growingIO 配置设置结束 -->
 104
-105        <!-- growingIO 配置设置结束 -->
-106
-107        <activity
-107-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:76:9-95:20
-108            android:name="io.dcloud.PandoraEntryActivity"
-108-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:77:13-58
-109            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard"
-109-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:78:13-101
-110            android:hardwareAccelerated="true"
-110-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:79:13-47
-111            android:launchMode="singleTask"
-111-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:80:13-44
-112            android:permission="com.miui.securitycenter.permission.AppPermissionsEditor"
-112-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:81:13-89
-113            android:screenOrientation="user"
-113-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:82:13-45
-114            android:theme="@style/DCloudTheme"
-114-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:83:13-47
-115            android:windowSoftInputMode="adjustResize" >
-115-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:84:13-55
-116            <intent-filter>
-116-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:85:13-94:29
-117                <category android:name="android.intent.category.DEFAULT" />
-117-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:44:17-76
-117-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:44:27-73
-118                <category android:name="android.intent.category.BROWSABLE" />
-118-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:45:17-78
-118-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:45:27-75
+105        <activity
+105-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:76:9-95:20
+106            android:name="io.dcloud.PandoraEntryActivity"
+106-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:77:13-58
+107            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard"
+107-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:78:13-101
+108            android:hardwareAccelerated="true"
+108-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:79:13-47
+109            android:launchMode="singleTask"
+109-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:80:13-44
+110            android:permission="com.miui.securitycenter.permission.AppPermissionsEditor"
+110-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:81:13-89
+111            android:screenOrientation="user"
+111-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:82:13-45
+112            android:theme="@style/DCloudTheme"
+112-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:83:13-47
+113            android:windowSoftInputMode="adjustResize" >
+113-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:84:13-55
+114            <intent-filter>
+114-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:85:13-94:29
+115                <category android:name="android.intent.category.DEFAULT" />
+115-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:44:17-76
+115-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:44:27-73
+116                <category android:name="android.intent.category.BROWSABLE" />
+116-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:45:17-78
+116-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:45:27-75
+117
+118                <action android:name="android.intent.action.VIEW" />
+118-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:42:17-69
+118-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:42:25-66
 119
-120                <action android:name="android.intent.action.VIEW" />
-120-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:42:17-69
-120-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:42:25-66
-121
-122                <data android:scheme="h56131bcf" />
-122-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:17-51
-122-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:23-48
-123            </intent-filter>
-124        </activity>
-125
-126        <provider
-126-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:96:9-104:20
-127            android:name="io.dcloud.common.util.DCloud_FileProvider"
-127-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:97:13-69
-128            android:authorities="com.HBuilder.UniPlugin.dc.fileprovider"
-128-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:98:13-73
-129            android:exported="false"
-129-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:99:13-37
-130            android:grantUriPermissions="true" >
-130-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:100:13-47
-131            <meta-data
-131-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:101:13-103:64
-132                android:name="android.support.FILE_PROVIDER_PATHS"
-132-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:102:17-67
-133                android:resource="@xml/dcloud_file_provider" />
-133-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:103:17-61
-134        </provider>
-135
-136        <service
-136-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:168:9-170:40
-137            android:name="io.dcloud.common.adapter.io.MiniServerService"
-137-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:169:13-73
-138            android:exported="false" />
-138-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:170:13-37
-139
-140        <receiver
-140-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:172:9-178:20
-141            android:name="io.dcloud.common.adapter.io.PushReceiver"
-141-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:173:13-68
-142            android:exported="false" >
-142-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:174:13-37
-143            <intent-filter>
-143-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:175:13-177:29
-144                <action android:name="dcloud.push.broswer" />
-144-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:176:17-62
-144-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:176:25-59
-145            </intent-filter>
-146        </receiver>
-147
-148        <activity
-148-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:180:9-183:40
-149            android:name="io.dcloud.imagepick.CustomGalleryActivity"
-149-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:181:13-69
-150            android:exported="false"
-150-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:182:13-37
-151            android:noHistory="true" />
-151-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:183:13-37
-152        <activity
-152-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:184:9-188:58
-153            android:name="io.dcloud.feature.nativeObj.photoview.PhotoActivity"
-153-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:185:13-79
-154            android:exported="false"
-154-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:186:13-37
-155            android:noHistory="false"
-155-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:187:13-38
-156            android:theme="@style/DeviceDefault.Light" />
-156-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:188:13-55
-157        <activity
-157-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:189:9-199:58
-158            android:name="io.dcloud.WebAppActivity"
-158-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:190:13-52
-159            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale"
-159-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:191:13-92
-160            android:hardwareAccelerated="true"
-160-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:192:13-47
-161            android:icon="@drawable/dcloud_recent"
-161-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:193:13-51
-162            android:label="@string/stream_my"
-162-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:194:13-46
-163            android:launchMode="singleTask"
-163-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:195:13-44
-164            android:screenOrientation="portrait"
-164-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:196:13-49
-165            android:taskAffinity=":stream"
-165-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:197:13-43
-166            android:theme="@style/DCloudTheme"
-166-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:198:13-47
-167            android:windowSoftInputMode="adjustResize" />
-167-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:199:13-55
-168        <activity
-168-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:200:9-206:75
-169            android:name="io.dcloud.ProcessMediator"
-169-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:201:13-53
-170            android:excludeFromRecents="true"
-170-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:202:13-46
-171            android:exported="false"
-171-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:203:13-37
-172            android:label="@string/app_name"
-172-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:204:13-45
-173            android:launchMode="singleTop"
-173-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:205:13-43
-174            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-174-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:206:13-72
-175        <activity
-175-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:207:9-213:20
-176            android:name="io.dcloud.WebviewActivity"
-176-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:208:13-53
-177            android:exported="false"
-177-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:209:13-37
-178            android:screenOrientation="portrait"
-178-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:210:13-49
-179            android:theme="@style/ThemeNoTitleBar"
-179-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:211:13-51
-180            android:windowSoftInputMode="adjustPan" >
-180-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:212:13-52
-181        </activity>
-182
-183        <receiver
-183-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:215:9-226:20
-184            android:name="io.dcloud.common.adapter.io.DownloadReceiver"
-184-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:216:13-72
-185            android:exported="false" >
-185-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:217:13-37
-186            <intent-filter>
-186-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:218:13-220:29
-187                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
-187-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:219:17-82
-187-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:219:25-79
-188            </intent-filter>
-189            <intent-filter>
-189-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:221:13-225:29
-190                <action android:name="android.intent.action.PACKAGE_ADDED" />
-190-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:222:17-78
-190-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:222:25-75
-191
-192                <data android:scheme="package" /> <!-- HERE! -->
-192-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:17-51
-192-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:23-48
-193            </intent-filter>
-194        </receiver> <!-- gallery******start -->
-195        <activity
-195-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:229:9-233:63
-196            android:name="com.dmcbig.mediapicker.PickerActivity"
-196-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:230:13-65
-197            android:configChanges="orientation|screenSize"
-197-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:231:13-59
-198            android:theme="@style/DeviceDefault.Light"
-198-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:232:13-55
-199            android:windowSoftInputMode="stateAlwaysHidden" />
-199-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:233:13-60
-200        <activity
-200-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:234:9-238:63
-201            android:name="com.dmcbig.mediapicker.PreviewActivity"
-201-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:235:13-66
-202            android:configChanges="orientation|screenSize"
-202-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:236:13-59
-203            android:theme="@style/DeviceDefault.Light"
-203-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:237:13-55
-204            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- gallery******end -->
-204-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:238:13-60
-205        <!--
-206        <provider
-207            android:name="io.dcloud.common.util.DCloud_FileProvider"
-208            android:authorities="${apk.applicationId}.dc.fileprovider"
-209            android:exported="false"
-210            android:grantUriPermissions="true">
-211            <meta-data
-212                android:name="android.support.FILE_PROVIDER_PATHS"
-213                android:resource="@xml/dcloud_file_provider" />
-214        </provider>
-215        -->
-216        <!--
-217            <meta-data
-218            android:name="DCLOUD_STREAMAPP_CHANNEL"
-219            android:value="io.dcloud.%APPID%|%APPID%|" />
-220        -->
-221        <meta-data
-221-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:259:9-261:35
-222            android:name="android.max_aspect"
-222-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:260:13-46
-223            android:value="2.4" />
-223-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:261:13-32
-224
-225        <receiver
-225-->[uniapp-v8-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/44aeb90ef51cb3916df69db6b325a01c/uniapp-v8-release/AndroidManifest.xml:30:9-34:20
-226            android:name="com.taobao.weex.WXGlobalEventReceiver"
-226-->[uniapp-v8-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/44aeb90ef51cb3916df69db6b325a01c/uniapp-v8-release/AndroidManifest.xml:31:13-65
-227            android:enabled="true"
-227-->[uniapp-v8-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/44aeb90ef51cb3916df69db6b325a01c/uniapp-v8-release/AndroidManifest.xml:32:13-35
-228            android:exported="false" >
-228-->[uniapp-v8-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/44aeb90ef51cb3916df69db6b325a01c/uniapp-v8-release/AndroidManifest.xml:33:13-37
-229        </receiver>
-230
-231        <provider
-231-->[com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:10:9-12:92
-232            android:name="com.growingio.android.sdk.collection.GrowingIOSettingsProvider"
-232-->[com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:12:13-90
-233            android:authorities="com.HBuilder.UniPlugin.GrowingIOSettingsProvider" />
-233-->[com.growingio.android:vds-android-agent:track-2.8.25] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/cc5309c6a4ec94343a5fc3df62d931e6/vds-android-agent-track-2.8.25/AndroidManifest.xml:11:13-77
-234    </application>
-235
-236</manifest>
+120                <data android:scheme="h56131bcf" />
+120-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:17-51
+120-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:23-48
+121            </intent-filter>
+122        </activity>
+123
+124        <provider
+124-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:96:9-104:20
+125            android:name="io.dcloud.common.util.DCloud_FileProvider"
+125-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:97:13-69
+126            android:authorities="com.HBuilder.UniPlugin.dc.fileprovider"
+126-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:98:13-73
+127            android:exported="false"
+127-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:99:13-37
+128            android:grantUriPermissions="true" >
+128-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:100:13-47
+129            <meta-data
+129-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:101:13-103:64
+130                android:name="android.support.FILE_PROVIDER_PATHS"
+130-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:102:17-67
+131                android:resource="@xml/dcloud_file_provider" />
+131-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:103:17-61
+132        </provider>
+133
+134        <service
+134-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:168:9-170:40
+135            android:name="io.dcloud.common.adapter.io.MiniServerService"
+135-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:169:13-73
+136            android:exported="false" />
+136-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:170:13-37
+137
+138        <receiver
+138-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:172:9-178:20
+139            android:name="io.dcloud.common.adapter.io.PushReceiver"
+139-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:173:13-68
+140            android:exported="false" >
+140-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:174:13-37
+141            <intent-filter>
+141-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:175:13-177:29
+142                <action android:name="dcloud.push.broswer" />
+142-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:176:17-62
+142-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:176:25-59
+143            </intent-filter>
+144        </receiver>
+145
+146        <activity
+146-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:180:9-183:40
+147            android:name="io.dcloud.imagepick.CustomGalleryActivity"
+147-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:181:13-69
+148            android:exported="false"
+148-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:182:13-37
+149            android:noHistory="true" />
+149-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:183:13-37
+150        <activity
+150-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:184:9-188:58
+151            android:name="io.dcloud.feature.nativeObj.photoview.PhotoActivity"
+151-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:185:13-79
+152            android:exported="false"
+152-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:186:13-37
+153            android:noHistory="false"
+153-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:187:13-38
+154            android:theme="@style/DeviceDefault.Light" />
+154-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:188:13-55
+155        <activity
+155-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:189:9-199:58
+156            android:name="io.dcloud.WebAppActivity"
+156-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:190:13-52
+157            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale"
+157-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:191:13-92
+158            android:hardwareAccelerated="true"
+158-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:192:13-47
+159            android:icon="@drawable/dcloud_recent"
+159-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:193:13-51
+160            android:label="@string/stream_my"
+160-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:194:13-46
+161            android:launchMode="singleTask"
+161-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:195:13-44
+162            android:screenOrientation="portrait"
+162-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:196:13-49
+163            android:taskAffinity=":stream"
+163-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:197:13-43
+164            android:theme="@style/DCloudTheme"
+164-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:198:13-47
+165            android:windowSoftInputMode="adjustResize" />
+165-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:199:13-55
+166        <activity
+166-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:200:9-206:75
+167            android:name="io.dcloud.ProcessMediator"
+167-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:201:13-53
+168            android:excludeFromRecents="true"
+168-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:202:13-46
+169            android:exported="false"
+169-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:203:13-37
+170            android:label="@string/app_name"
+170-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:204:13-45
+171            android:launchMode="singleTop"
+171-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:205:13-43
+172            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+172-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:206:13-72
+173        <activity
+173-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:207:9-213:20
+174            android:name="io.dcloud.WebviewActivity"
+174-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:208:13-53
+175            android:exported="false"
+175-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:209:13-37
+176            android:screenOrientation="portrait"
+176-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:210:13-49
+177            android:theme="@style/ThemeNoTitleBar"
+177-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:211:13-51
+178            android:windowSoftInputMode="adjustPan" >
+178-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:212:13-52
+179        </activity>
+180
+181        <receiver
+181-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:215:9-226:20
+182            android:name="io.dcloud.common.adapter.io.DownloadReceiver"
+182-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:216:13-72
+183            android:exported="false" >
+183-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:217:13-37
+184            <intent-filter>
+184-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:218:13-220:29
+185                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+185-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:219:17-82
+185-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:219:25-79
+186            </intent-filter>
+187            <intent-filter>
+187-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:221:13-225:29
+188                <action android:name="android.intent.action.PACKAGE_ADDED" />
+188-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:222:17-78
+188-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:222:25-75
+189
+190                <data android:scheme="package" /> <!-- HERE! -->
+190-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:17-51
+190-->/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/AndroidManifest.xml:41:23-48
+191            </intent-filter>
+192        </receiver> <!-- gallery******start -->
+193        <activity
+193-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:229:9-233:63
+194            android:name="com.dmcbig.mediapicker.PickerActivity"
+194-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:230:13-65
+195            android:configChanges="orientation|screenSize"
+195-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:231:13-59
+196            android:theme="@style/DeviceDefault.Light"
+196-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:232:13-55
+197            android:windowSoftInputMode="stateAlwaysHidden" />
+197-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:233:13-60
+198        <activity
+198-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:234:9-238:63
+199            android:name="com.dmcbig.mediapicker.PreviewActivity"
+199-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:235:13-66
+200            android:configChanges="orientation|screenSize"
+200-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:236:13-59
+201            android:theme="@style/DeviceDefault.Light"
+201-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:237:13-55
+202            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- gallery******end -->
+202-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:238:13-60
+203        <!--
+204        <provider
+205            android:name="io.dcloud.common.util.DCloud_FileProvider"
+206            android:authorities="${apk.applicationId}.dc.fileprovider"
+207            android:exported="false"
+208            android:grantUriPermissions="true">
+209            <meta-data
+210                android:name="android.support.FILE_PROVIDER_PATHS"
+211                android:resource="@xml/dcloud_file_provider" />
+212        </provider>
+213        -->
+214        <!--
+215            <meta-data
+216            android:name="DCLOUD_STREAMAPP_CHANNEL"
+217            android:value="io.dcloud.%APPID%|%APPID%|" />
+218        -->
+219        <meta-data
+219-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:259:9-261:35
+220            android:name="android.max_aspect"
+220-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:260:13-46
+221            android:value="2.4" />
+221-->[lib.5plus.base-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/732d2464d82e8ab3817bf11edd4374ff/lib.5plus.base-release/AndroidManifest.xml:261:13-32
+222
+223        <receiver
+223-->[uniapp-v8-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/44aeb90ef51cb3916df69db6b325a01c/uniapp-v8-release/AndroidManifest.xml:30:9-34:20
+224            android:name="com.taobao.weex.WXGlobalEventReceiver"
+224-->[uniapp-v8-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/44aeb90ef51cb3916df69db6b325a01c/uniapp-v8-release/AndroidManifest.xml:31:13-65
+225            android:enabled="true"
+225-->[uniapp-v8-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/44aeb90ef51cb3916df69db6b325a01c/uniapp-v8-release/AndroidManifest.xml:32:13-35
+226            android:exported="false" >
+226-->[uniapp-v8-release.aar] /Users/shenliming/.gradle/caches/transforms-2/files-2.1/44aeb90ef51cb3916df69db6b325a01c/uniapp-v8-release/AndroidManifest.xml:33:13-37
+227        </receiver>
+228    </application>
+229
+230</manifest>

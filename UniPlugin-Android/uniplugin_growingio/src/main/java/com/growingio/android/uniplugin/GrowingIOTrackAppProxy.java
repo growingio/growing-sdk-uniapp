@@ -26,6 +26,7 @@ public class GrowingIOTrackAppProxy implements UniAppHookProxy {
         configuration.setDeviceId("9a7f70313f66fb62");
         configuration.setURLScheme("growing.4cf6e0a04c6a7b10");
         configuration.setDebugMode(true);
+        configuration.setRnMode()
         GrowingIO.startWithConfiguration(application, configuration);
     }
 

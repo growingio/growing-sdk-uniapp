@@ -42,9 +42,7 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
-    <uses-permission android:name="freemme.permission.msa" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- Barcode(二维码)  end -->
+    <uses-permission android:name="freemme.permission.msa" /> <!-- Barcode(二维码)  end -->
     <application
         android:name="io.dcloud.application.DCloudApplication"
         android:allowBackup="true"
@@ -227,10 +225,6 @@
             android:enabled="true"
             android:exported="false" >
         </receiver>
-
-        <provider
-            android:name="com.growingio.android.sdk.collection.GrowingIOSettingsProvider"
-            android:authorities="com.HBuilder.UniPlugin.GrowingIOSettingsProvider" />
     </application>
 
 </manifest>
