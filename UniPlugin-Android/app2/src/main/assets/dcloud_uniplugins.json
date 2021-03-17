@@ -1,0 +1,14 @@
+{
+  "nativePlugins": [
+    {
+      "hooksClass": "com.growingio.android.uniplugin.GrowingIOTrackConfigAppProxy",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "GrowingIO-Track",
+          "class": "com.growingio.android.uniplugin.GrowingIOTrackModule"
+        }
+      ]
+    }
+  ]
+}

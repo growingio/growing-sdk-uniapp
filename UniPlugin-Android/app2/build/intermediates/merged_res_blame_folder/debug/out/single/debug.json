@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/build/intermediates/res/merged/debug/drawable-xxhdpi_splash.png.flat",
+        "source": "/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/res/drawable-xxhdpi/splash.png"
+    },
+    {
+        "merged": "/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/build/intermediates/res/merged/debug/drawable-xxhdpi_icon.png.flat",
+        "source": "/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/res/drawable-xxhdpi/icon.png"
+    },
+    {
+        "merged": "/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/build/intermediates/res/merged/debug/drawable-xxhdpi_push.png.flat",
+        "source": "/Users/shenliming/Workspace/growing/growingio-uniapp/UniPlugin-Android/app2/src/main/res/drawable-xxhdpi/push.png"
+    }
+]

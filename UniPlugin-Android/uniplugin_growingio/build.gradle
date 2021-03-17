@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        // 请将此处修改为您的项目中对应id以及scheme
+        resValue("string", "growingio_project_id", "9926fc6c1189e2fb")
+        resValue("string", "growingio_url_scheme", "growing.4cf6e0a04c6a7b10")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+
+    compileOnly 'com.android.support:recyclerview-v7:28.0.0'
+    compileOnly 'com.android.support:support-v4:28.0.0'
+    compileOnly 'com.android.support:appcompat-v7:28.0.0'
+    compileOnly 'com.alibaba:fastjson:1.1.46.android'
+
+    compileOnly fileTree(dir: '../app/libs', include: ['uniapp-v8-release.aar'])
+
+    compileOnly 'com.alibaba:fastjson:1.1.46.android'
+
+    //最新版本的growingio 埋点sdk 版本
+    implementation "com.growingio.android:vds-android-agent:track-2.8.25"
+}
