@@ -1,0 +1,135 @@
+{
+  "name": "GrowingIO-Track",
+  "id": "GrowingIO-Track",
+  "version": "2.8.25",
+  "description": "GrowingIO埋点SDK",
+  "_dp_type": "nativeplugin",
+  "_dp_nativeplugin":{
+    "android": {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "GrowingIO-Track",
+          "class": "com.growingio.android.uniplugin.GrowingIOTrackModule"
+        }
+      ],
+      "hooksClass": "com.growingio.android.uniplugin.GrowingIOTrackConfigAppProxy",
+      "integrateType": "aar",
+      "dependencies": [
+        "com.growingio.android:vds-android-agent:track-2.8.25"
+      ],
+      "minSdkVersion": "17",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.READ_PHONE_STATE"
+      ],
+      "parameters": {
+        "growing_android_account_id": {
+          "des": "项目ID(必填字段)",
+          "key": "growing_android_account_id",
+          "value": "${growing_android_account_id}"
+        },
+        "growing_android_url_scheme": {
+          "des": "urlScheme(必填字段, 同时需要在 App常用其它设置->Android设置->UrlSchemes 中设置)",
+          "key": "growing_android_url_scheme",
+          "value": "${growing_android_url_scheme}"
+        },
+        "growing_android_debug": {
+          "des": "是否开启android debug(可选字段(true or false), 默认为false)",
+          "key": "growing_android_debug",
+          "value": "${growing_android_debug}"
+        },
+        "growing_channel": {
+          "des": "设置渠道(可选字段)",
+          "key": "growing_channel",
+          "value": "${growing_channel}"
+        },
+        "growing_zone": {
+          "des": "设置时区(可选字段)",
+          "key": "growing_zone",
+          "value": "${growing_zone}"
+        },
+        "growing_gta_host": {
+          "des": "设置数据后台服务器地址(可选字段)",
+          "key": "growing_gta_host",
+          "value": "${growing_gta_host}"
+        },
+        "growing_data_host": {
+          "des": "设置数据查看平台服务器地址(可选字段)",
+          "key": "growing_data_host",
+          "value": "${growing_data_host}"
+        },
+        "growing_report_host": {
+          "des": "设置设备报活服务器地址(可选字段)",
+          "key": "growing_report_host",
+          "value": "${growing_report_host}"
+        },
+        "growing_ws_host": {
+          "des": "设置WebSocket地址(可选字段)",
+          "key": "growing_ws_host",
+          "value": "${growing_ws_host}"
+        },
+        "growing_tracker_rnmode": {
+          "des": "设置rn模式(可选字段)",
+          "key": "growing_tracker_rnmode",
+          "value": "${growing_ws_host}"
+        },
+        "growing_tracker_host": {
+          "des": "设置数据收集平台服务器地址(可选字段)",
+          "key": "growing_tracker_host",
+          "value": "${growing_tracker_host}"
+        }
+      }
+    },
+    "ios": {
+      "plugins": [{
+        "type": "module",
+        "name": "GrowingIO-Track",
+        "class": "GrowingIOTrackModule"
+      }],
+      "integrateType": "framework",
+      "hooksClass": "GrowingIOTrackerProxy",
+      "frameworks": ["Foundation.Framework", "Security.framework", "CoreTelephony.framework",
+        "SystemConfiguration.framework", "AdSupport.framework", "libicucore.tbd", "libsqlite3.tbd",
+        "CoreLocation.framework", "JavaScriptCore.framework", "WebKit.framework"],
+      "deploymentTarget": "8.0",
+      "parameters": {
+        "growing_ios_account_id": {
+          "des": "项目ID(必填字段)",
+          "key": "growing_ios_account_id"
+        },
+        "growing_ios_debug": {
+          "des": "是否开启ios debug(可选字段(YES or NO), 默认为NO)",
+          "key": "growing_ios_debug"
+        },
+        "growing_zone": {
+          "des": "设置时区(可选字段)",
+          "key": "growing_zone"
+        },
+        "growing_gta_host": {
+          "des": "设置数据后台服务器地址(可选字段)",
+          "key": "growing_gta_host"
+        },
+        "growing_data_host": {
+          "des": "设置数据查看平台服务器地址(可选字段)",
+          "key": "growing_data_host"
+        },
+        "growing_report_host": {
+          "des": "设置设备报活服务器地址(可选字段)",
+          "key": "growing_zone"
+        },
+        "growing_ws_host": {
+          "des": "设置WebSocket地址(可选字段)",
+          "key": "growing_ws_host"
+        },
+        "growing_tracker_host": {
+          "des": "设置数据收集平台服务器地址(可选字段)",
+          "key": "growing_tracker_host"
+        }
+      }
+    }
+  }
+}
