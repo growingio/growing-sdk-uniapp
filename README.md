@@ -1,8 +1,8 @@
-### DCloud-growingio
+# DCloud-growingio
 * DCloud封装growingio sdk插件
 
-### 集成文档
-* HBuilderX中在manifest.json中选择App原生插件配置, 并将必填字段进行填写
+## 集成文档
+* HBuilderX中在manifest.json中选择本地原生插件配置, 并将必填字段进行填写
     * growing_android_account_id 即项目id, 可在官网查看
     * growing_ios_account_id 即项目id, 可在官网查看
     * growing_android_url_scheme 即android项目的urlscheme
@@ -11,10 +11,14 @@
     * manifest.json中选择App常用其它设置
         * Android设置中UrlSchemes配置官网提供的android项目urlscheme
         * iOS设置中UrlSchemes配置官网提供的ios项目urlscheme
-* 其它调用请参考[官方文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/otherframe-sdk/weex-sdk)
-    * 因为都是基于weex的, 所有调用上是相同的, 仅需参考文档中调用方式(即仅参考文档中第二部分调用, 忽略第一部分集成)
     
 ```Vue.js
-gio = uni.requireNativePlugin('GrowingIO-Tracker')
+gio = uni.requireNativePlugin('GrowingIO-Track')
 gio.track({'eventId':'activate'});
 ```
+
+## 关于插件说明
+插件位于 release 文件夹下。  
+该插件用于 HBuilder 云打包使用，而且仅在云打包情况下，manifest.json 下的参数设置才能在app中生效。
+
+若是自己使用工具（Android Studio 或者 Xcode）打包可以参考 [UniPlugin-Android](https://github.com/growingio/growing-sdk-uniapp/tree/main/UniPlugin-Android) 和 [UniPlugin-iOS](https://github.com/growingio/growing-sdk-uniapp/tree/main/UniPlugin-iOS) 两个例子进行集成。
