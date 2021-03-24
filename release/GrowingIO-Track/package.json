@@ -88,7 +88,7 @@
       "plugins": [{
         "type": "module",
         "name": "GrowingIO-Track",
-        "class": "GrowingIOTrackModule"
+        "class": "GrowingIOWeexPlugin"
       }],
       "integrateType": "framework",
       "hooksClass": "GrowingIOTrackerProxy",
