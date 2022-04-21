@@ -1,7 +1,7 @@
 {
   "name": "GrowingIO-Track",
   "id": "GrowingIO-Track",
-  "version": "2.8.25",
+  "version": "2.9.13",
   "description": "GrowingIO埋点SDK",
   "_dp_type": "nativeplugin",
   "_dp_nativeplugin":{
@@ -16,7 +16,7 @@
       "hooksClass": "com.growingio.android.uniplugin.GrowingIOTrackConfigAppProxy",
       "integrateType": "aar",
       "dependencies": [
-        "com.growingio.android:vds-android-agent:track-2.8.25"
+        "com.growingio.android:vds-android-agent:track-2.9.13"
       ],
       "minSdkVersion": "17",
       "permissions": [

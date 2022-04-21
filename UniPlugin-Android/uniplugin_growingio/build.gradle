@@ -51,5 +51,5 @@ dependencies {
     compileOnly 'com.alibaba:fastjson:1.1.46.android'
 
     //最新版本的growingio 埋点sdk 版本
-    implementation "com.growingio.android:vds-android-agent:track-2.8.25"
+    implementation "com.growingio.android:vds-android-agent:track-2.9.13"
 }

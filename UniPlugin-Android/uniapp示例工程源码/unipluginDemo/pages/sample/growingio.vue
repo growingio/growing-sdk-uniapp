@@ -18,8 +18,21 @@
 		},
 		methods: {
 			growingTest() {
-			    growing.track({'eventId':'login'});
-			    growing.printLog('这是 GrowingIO 模块的消息');
+				growing.track({
+					'eventId': 'login'
+				});
+				growing.printLog('这是 GrowingIO 模块的消息');
+
+				growing.track({
+					"eventId": "custom",
+					"eventLevelVariable": {
+						"grow_index": "苹果",
+						"grow_click": 14
+					}
+				});
+				
+				growing.setVisiotr({})
+
 			},
 		}
 	}
