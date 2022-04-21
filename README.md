@@ -15,6 +15,15 @@
 ```Vue.js
 gio = uni.requireNativePlugin('GrowingIO-Track')
 gio.track({'eventId':'activate'});
+
+//自定义参数
+gio.track({
+   "eventId": "custom",
+   "eventLevelVariable": {
+      "grow_index": "苹果",
+      "grow_click": 14
+   }
+});
 ```
 
 ## 关于插件说明
