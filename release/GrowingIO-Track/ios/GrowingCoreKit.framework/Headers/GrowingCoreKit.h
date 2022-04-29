@@ -7,16 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <Security/Security.h>
+#import <CFNetwork/CFNetwork.h>
+#import <CoreLocation/CoreLocation.h>
+#import <WebKit/WebKit.h>
 
-#ifndef __cplusplus
-@import Foundation;
-@import CoreTelephony;
-@import SystemConfiguration;
-@import Security;
-@import CFNetwork;
-@import CoreLocation;
-@import WebKit;
-#endif
 
 typedef NS_ENUM(NSInteger, GrowingAspectMode)
 {
@@ -169,6 +166,13 @@ typedef NS_ENUM(NSInteger, GrowingAspectMode)
 + (void)disableDataCollect;
 // 设置 GDPR 失效
 + (void)enableDataCollect;
+
+// 设置剪贴板权限
++ (void)setReadClipBoardEnable:(BOOL)enabled;
+
+// 设置是否获取 Apple Search Ads 归因数据
++ (void)setAsaEnabled:(BOOL)asaEnabled;
+
 // 获取当前设备id
 + (NSString *)getDeviceId;
 // 获取当前uid
@@ -277,4 +281,5 @@ typedef NS_ENUM(NSInteger, GrowingAspectMode)
  */
 + (void)setUploadExceptionEnable:(BOOL)uploadExceptionEnable;
 
++ (void)bridgeForWKWebView:(WKWebView *)webView;
 @end
