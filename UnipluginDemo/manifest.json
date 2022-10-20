@@ -23,34 +23,112 @@
             /* android打包配置 */
             "android" : {
                 "permissions" : [
-                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
-                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
-                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
-                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
-                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
-                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
-                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
-                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
-                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
-                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
-                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
-                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
-                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
-                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
-                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
-                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
-                    "<uses-feature android:name=\"android.hardware.camera\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
-                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>"
                 ]
             },
             /* ios打包配置 */
-            "ios" : {},
+            "ios" : {
+                "dSYMs" : false
+            },
             /* SDK配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "ad" : {}
+            }
+        },
+        "nativePlugins" : {
+            "GrowingIO-Track" : {
+                "growing_ios_account_id" : "",
+                "growing_ios_debug" : "",
+                "growing_zone" : "",
+                "growing_gta_host" : "",
+                "growing_data_host" : "",
+                "growing_report_host" : "",
+                "growing_ws_host" : "",
+                "growing_tracker_host" : "",
+                "growing_android_account_id" : "9926fc6c1189e2fb",
+                "growing_android_url_scheme" : "growing.4cf6e0a04c6a7b10",
+                "growing_android_debug" : "true",
+                "growing_channel" : "",
+                "growing_tracker_rnmode" : "",
+                "__plugin_info__" : {
+                    "name" : "GrowingIO-Track",
+                    "description" : "GrowingIO埋点SDK",
+                    "platforms" : "Android,iOS",
+                    "url" : "",
+                    "android_package_name" : "",
+                    "ios_bundle_id" : "",
+                    "isCloud" : false,
+                    "bought" : -1,
+                    "pid" : "",
+                    "parameters" : {
+                        "growing_ios_account_id" : {
+                            "des" : "项目ID(必填字段)",
+                            "key" : "growing_ios_account_id",
+                            "value" : ""
+                        },
+                        "growing_ios_debug" : {
+                            "des" : "是否开启ios debug(可选字段(YES or NO), 默认为NO)",
+                            "key" : "growing_ios_debug",
+                            "value" : ""
+                        },
+                        "growing_zone" : {
+                            "des" : "设置时区(可选字段)",
+                            "key" : "growing_zone",
+                            "value" : "${growing_zone}"
+                        },
+                        "growing_gta_host" : {
+                            "des" : "设置数据后台服务器地址(可选字段)",
+                            "key" : "growing_gta_host",
+                            "value" : "${growing_gta_host}"
+                        },
+                        "growing_data_host" : {
+                            "des" : "设置数据查看平台服务器地址(可选字段)",
+                            "key" : "growing_data_host",
+                            "value" : "${growing_data_host}"
+                        },
+                        "growing_report_host" : {
+                            "des" : "设置设备报活服务器地址(可选字段)",
+                            "key" : "growing_report_host",
+                            "value" : "${growing_report_host}"
+                        },
+                        "growing_ws_host" : {
+                            "des" : "设置WebSocket地址(可选字段)",
+                            "key" : "growing_ws_host",
+                            "value" : "${growing_ws_host}"
+                        },
+                        "growing_tracker_host" : {
+                            "des" : "设置数据收集平台服务器地址(可选字段)",
+                            "key" : "growing_tracker_host",
+                            "value" : "${growing_tracker_host}"
+                        },
+                        "growing_android_account_id" : {
+                            "des" : "项目ID(必填字段)",
+                            "key" : "growing_android_account_id",
+                            "value" : "${growing_android_account_id}"
+                        },
+                        "growing_android_url_scheme" : {
+                            "des" : "urlScheme(必填字段, 同时需要在 App常用其它设置->Android设置->UrlSchemes 中设置)",
+                            "key" : "growing_android_url_scheme",
+                            "value" : "${growing_android_url_scheme}"
+                        },
+                        "growing_android_debug" : {
+                            "des" : "是否开启android debug(可选字段(true or false), 默认为false)",
+                            "key" : "growing_android_debug",
+                            "value" : "${growing_android_debug}"
+                        },
+                        "growing_channel" : {
+                            "des" : "设置渠道(可选字段)",
+                            "key" : "growing_channel",
+                            "value" : "${growing_channel}"
+                        },
+                        "growing_tracker_rnmode" : {
+                            "des" : "设置rn模式(可选字段)",
+                            "key" : "growing_tracker_rnmode",
+                            "value" : "${growing_ws_host}"
+                        }
+                    }
+                }
+            }
         }
     },
     /* 快应用特有相关 */

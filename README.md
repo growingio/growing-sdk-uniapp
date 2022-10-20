@@ -39,3 +39,7 @@ gio.track({
 
 ## 注意信息
 iOS Demo 需要下载对应版本 Uni SDK 到 UniPlugin-iOS/SDK目录中
+
+## 自定义基座运行 UnipluginDemo
+* 新增nativeplugins文件，并将release/GrowingIO-Track移动到该目录下
+* 重新构建自定义基座
