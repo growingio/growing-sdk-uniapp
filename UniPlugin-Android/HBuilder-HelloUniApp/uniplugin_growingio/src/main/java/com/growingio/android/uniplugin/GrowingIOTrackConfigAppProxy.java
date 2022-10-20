@@ -31,9 +31,14 @@ public class GrowingIOTrackConfigAppProxy implements UniAppHookProxy {
             Configuration configuration = new Configuration();
             configuration.setProjectId(accountId);
             configuration.setURLScheme(urlScheme);
-            boolean isDebug = appInfo.metaData.getBoolean("growing_android_debug", false);
-            configuration.setDebugMode(isDebug);
-            configuration.setTestMode(isDebug);
+
+            try {
+                boolean isDebug = appInfo.metaData.getBoolean("growing_android_debug", false);
+                configuration.setDebugMode(isDebug);
+                configuration.setTestMode(isDebug);
+            } catch (Exception ignore) {
+            }
+
             String channel = appInfo.metaData.getString("growing_channel");
             if (!TextUtils.isEmpty(channel)) {
                 configuration.setChannel(channel);
@@ -62,8 +67,11 @@ public class GrowingIOTrackConfigAppProxy implements UniAppHookProxy {
             if (!TextUtils.isEmpty(trackerHost)) {
                 configuration.setTrackerHost(trackerHost);
             }
-            boolean rnMode = appInfo.metaData.getBoolean("growing_tracker_rnmode", true);
-            configuration.setRnMode(rnMode);
+            try {
+                boolean rnMode = appInfo.metaData.getBoolean("growing_tracker_rnmode", true);
+                configuration.setRnMode(rnMode);
+            } catch (Exception ignore) {
+            }
 
             GrowingIO.startWithConfiguration(application, configuration);
         } catch (Throwable t) {
