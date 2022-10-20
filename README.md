@@ -31,3 +31,11 @@ gio.track({
 该插件用于 HBuilder 云打包使用，而且仅在云打包情况下，manifest.json 下的参数设置才能在app中生效。
 
 若是自己使用工具（Android Studio 或者 Xcode）打包可以参考 [UniPlugin-Android](https://github.com/growingio/growing-sdk-uniapp/tree/main/UniPlugin-Android) 和 [UniPlugin-iOS](https://github.com/growingio/growing-sdk-uniapp/tree/main/UniPlugin-iOS) 两个例子进行集成。
+
+## 版本信息
+Uni SDK 基于 3.6.4 版本
+Android SDK 基于 2.9.13 版本
+iOS SDK 基于 2.9.13 版本
+
+## 注意信息
+iOS Demo 需要下载对应版本 Uni SDK 到 UniPlugin-iOS/SDK目录中
