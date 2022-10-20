@@ -47,14 +47,13 @@ growing.printLog('这是 GrowingIO 模块的消息');
 [官方插件调试教程](https://nativesupport.dcloud.net.cn/NativePlugin/course/android?id=%e6%8f%92%e4%bb%b6%e8%b0%83%e8%af%95)
 
 ## 方式二：引入 aar 包
-具体可以参考 app2 下的配置
 
 1. 在 你的项目的 libs 下放入 `growingio-uniplugin.aar` 包
 2. 在 `build.gradle` 添加依赖
 
 ```groovy
 //最新版本的growingio 埋点sdk 版本
-implementation "com.growingio.android:vds-android-agent:track-2.8.25"
+implementation "com.growingio.android:vds-android-agent:track-2.9.13"
 ```
 
 3. 在 `AndroidManifest.xml` 中配置项目
@@ -109,5 +108,3 @@ implementation "com.growingio.android:vds-android-agent:track-2.8.25"
   ]
 }
 ```
-
-5. 最后可以通过运行 app2 例子来查看结果。 

@@ -1,3 +1,0 @@
-include ':uniplugin_growingio'
-include ':app'
-include ':app2'
