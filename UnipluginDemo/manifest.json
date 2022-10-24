@@ -37,7 +37,7 @@
         },
         "nativePlugins" : {
             "GrowingIO-Track" : {
-                "growing_ios_account_id" : "",
+                "growing_ios_account_id" : "9926fc6c1189e2fb",
                 "growing_ios_debug" : "",
                 "growing_zone" : "",
                 "growing_gta_host" : "",
@@ -45,11 +45,19 @@
                 "growing_report_host" : "",
                 "growing_ws_host" : "",
                 "growing_tracker_host" : "",
+                "growing_ios_delay_init" : "",
+                "growing_ios_read_clip_board_enable" : "",
                 "growing_android_account_id" : "9926fc6c1189e2fb",
                 "growing_android_url_scheme" : "growing.4cf6e0a04c6a7b10",
-                "growing_android_debug" : "true",
+                "growing_android_debug" : "",
                 "growing_channel" : "",
                 "growing_tracker_rnmode" : "",
+                "growing_android_delay_init" : "true",
+                "growing_android_data_collect" : "",
+                "growing_android_id_enable" : "",
+                "growing_android_imei_enable" : "",
+                "growing_android_oaid_enable" : "",
+                "growing_android_read_clip_board_enable" : "",
                 "__plugin_info__" : {
                     "name" : "GrowingIO-Track",
                     "description" : "GrowingIO埋点SDK",
@@ -101,6 +109,16 @@
                             "key" : "growing_tracker_host",
                             "value" : "${growing_tracker_host}"
                         },
+                        "growing_ios_delay_init" : {
+                            "des" : "是否延迟初始化(可选字段(YES or NO), 默认为NO)",
+                            "key" : "growing_ios_delay_init",
+                            "value" : ""
+                        },
+                        "growing_ios_read_clip_board_enable" : {
+                            "des" : "是否读取剪切板(可选字段(YES or NO), 默认为YES), 该功能涉及延迟深度链接是否可用",
+                            "key" : "growing_ios_read_clip_board_enable",
+                            "value" : ""
+                        },
                         "growing_android_account_id" : {
                             "des" : "项目ID(必填字段)",
                             "key" : "growing_android_account_id",
@@ -125,6 +143,36 @@
                             "des" : "设置rn模式(可选字段)",
                             "key" : "growing_tracker_rnmode",
                             "value" : "${growing_ws_host}"
+                        },
+                        "growing_android_delay_init" : {
+                            "des" : "是否延迟初始化(可选字段(true or false), 默认为false)",
+                            "key" : "growing_android_delay_init",
+                            "value" : "${growing_android_delay_init}"
+                        },
+                        "growing_android_data_collect" : {
+                            "des" : "是否开启数据采集(可选字段(true or false), 默认为true)",
+                            "key" : "growing_android_delay_init",
+                            "value" : "${growing_android_delay_init}"
+                        },
+                        "growing_android_id_enable" : {
+                            "des" : "是否采集androidid(可选字段(true or false), 默认为true)",
+                            "key" : "growing_android_id_enable",
+                            "value" : "${growing_android_id_enable}"
+                        },
+                        "growing_android_imei_enable" : {
+                            "des" : "是否采集imei(可选字段(true or false), 默认为true)",
+                            "key" : "growing_android_imei_enable",
+                            "value" : "${growing_android_imei_enable}"
+                        },
+                        "growing_android_oaid_enable" : {
+                            "des" : "是否采集oaid(可选字段(true or false), 默认为true)",
+                            "key" : "growing_android_oaid_enable",
+                            "value" : "${growing_android_oaid_enable}"
+                        },
+                        "growing_android_read_clip_board_enable" : {
+                            "des" : "是否读取剪切板(可选字段(true or false), 默认为true), 该功能涉及延迟深度链接是否可用",
+                            "key" : "growing_android_read_clip_board_enable",
+                            "value" : "${growing_android_read_clip_board_enable}"
                         }
                     }
                 }

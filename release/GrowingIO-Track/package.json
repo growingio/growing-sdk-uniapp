@@ -81,6 +81,36 @@
           "des": "设置数据收集平台服务器地址(可选字段)",
           "key": "growing_tracker_host",
           "value": "${growing_tracker_host}"
+        },
+        "growing_android_delay_init": {
+          "des": "是否延迟初始化(可选字段(true or false), 默认为false)",
+          "key": "growing_android_delay_init",
+          "value": "${growing_android_delay_init}"
+        },
+        "growing_android_data_collect": {
+          "des": "是否开启数据采集(可选字段(true or false), 默认为true)",
+          "key": "growing_android_delay_init",
+          "value": "${growing_android_delay_init}"
+        },
+        "growing_android_id_enable": {
+          "des": "是否采集androidid(可选字段(true or false), 默认为true)",
+          "key": "growing_android_id_enable",
+          "value": "${growing_android_id_enable}"
+        },
+        "growing_android_imei_enable": {
+          "des": "是否采集imei(可选字段(true or false), 默认为true)",
+          "key": "growing_android_imei_enable",
+          "value": "${growing_android_imei_enable}"
+        },
+        "growing_android_oaid_enable": {
+          "des": "是否采集oaid(可选字段(true or false), 默认为true)",
+          "key": "growing_android_oaid_enable",
+          "value": "${growing_android_oaid_enable}"
+        },
+        "growing_android_read_clip_board_enable": {
+          "des": "是否读取剪切板(可选字段(true or false), 默认为true), 该功能涉及延迟深度链接是否可用",
+          "key": "growing_android_read_clip_board_enable",
+          "value": "${growing_android_read_clip_board_enable}"
         }
       }
     },
@@ -91,7 +121,7 @@
         "class": "GrowingIOTrackModule"
       }],
       "integrateType": "framework",
-      "hooksClass": "GrowingIOTrackerProxy",
+      "hooksClass": "GrowingIOTrackConfigProxy",
       "frameworks": ["Foundation.Framework", "Security.framework", "CoreTelephony.framework",
         "SystemConfiguration.framework", "AdSupport.framework", "libicucore.tbd", "libsqlite3.tbd",
         "CoreLocation.framework", "JavaScriptCore.framework", "WebKit.framework"],
@@ -128,6 +158,14 @@
         "growing_tracker_host": {
           "des": "设置数据收集平台服务器地址(可选字段)",
           "key": "growing_tracker_host"
+        },
+        "growing_ios_delay_init": {
+          "des": "是否延迟初始化(可选字段(YES or NO), 默认为NO)",
+          "key": "growing_ios_delay_init"
+        },
+        "growing_ios_read_clip_board_enable": {
+          "des": "是否读取剪切板(可选字段(YES or NO), 默认为YES), 该功能涉及延迟深度链接是否可用",
+          "key": "growing_ios_read_clip_board_enable"
         }
       }
     }

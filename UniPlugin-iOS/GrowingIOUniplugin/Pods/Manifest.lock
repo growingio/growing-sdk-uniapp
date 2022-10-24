@@ -1,0 +1,20 @@
+PODS:
+  - Growing (2.9.12)
+  - GrowingCoreKit (2.9.12):
+    - Growing (= 2.9.12)
+
+DEPENDENCIES:
+  - GrowingCoreKit
+
+SPEC REPOS:
+  trunk:
+    - Growing
+    - GrowingCoreKit
+
+SPEC CHECKSUMS:
+  Growing: 1ae0d35a84e742377fa03825ab977c53029c5f4f
+  GrowingCoreKit: 4d4e5a7f807a20713cb24e244b10b6061578041b
+
+PODFILE CHECKSUM: 1f5a83a687eaf7633ad26a1cc10825f92003a804
+
+COCOAPODS: 1.11.2

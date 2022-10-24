@@ -32,6 +32,48 @@ public class GrowingIOTrackConfigAppProxy implements UniAppHookProxy {
             configuration.setProjectId(accountId);
             configuration.setURLScheme(urlScheme);
 
+            // 延迟初始化
+            try {
+                boolean delayInit = appInfo.metaData.getBoolean("growing_android_delay_init", false);
+                if (delayInit) {
+                    return;
+                }
+            } catch (Exception ignore) {
+            }
+
+            // 是否开启 数据采集
+            try {
+                boolean dataCollect = appInfo.metaData.getBoolean("growing_android_data_collect", true);
+                if (!dataCollect) {
+                    configuration.disableDataCollect();
+                }
+            } catch (Exception ignore) {
+            }
+            // 是否采集 android_id
+            try {
+                boolean androidIdEnable = appInfo.metaData.getBoolean("growing_android_id_enable", true);
+                configuration.setAndroidIdEnable(androidIdEnable);
+            } catch (Exception ignore) {
+            }
+            // 是否采集 Imei
+            try {
+                boolean imeiEnable = appInfo.metaData.getBoolean("growing_android_imei_enable", true);
+                configuration.setImeiEnable(imeiEnable);
+            } catch (Exception ignore) {
+            }
+            // 是否采集 Oaid
+            try {
+                boolean oaidEnable = appInfo.metaData.getBoolean("growing_android_oaid_enable", true);
+                configuration.setOAIDEnable(oaidEnable);
+            } catch (Exception ignore) {
+            }
+            // 是否读取剪切板
+            try {
+                boolean readClipBoardEnable = appInfo.metaData.getBoolean("growing_android_read_clip_board_enable", true);
+                configuration.setReadClipBoardEnable(readClipBoardEnable);
+            } catch (Exception ignore) {
+            }
+
             try {
                 boolean isDebug = appInfo.metaData.getBoolean("growing_android_debug", false);
                 configuration.setDebugMode(isDebug);
