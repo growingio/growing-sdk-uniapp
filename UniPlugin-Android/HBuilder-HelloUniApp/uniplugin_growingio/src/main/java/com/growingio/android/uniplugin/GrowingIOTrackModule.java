@@ -218,11 +218,16 @@ public class GrowingIOTrackModule extends UniModule {
     private static final String ANDROID_ENABLE_OAID = "androidEnableOaid";
     private static final String ANDROID_ENABLE_ANDROID_ID = "androidEnableAndroidId";
     private static final String ANDROID_ENABLE_IMEI = "androidEnableImei";
+    private static final String ANDROID_URL_SCHEME = "androidUrlScheme";
     @UniJSMethod(uiThread = true)
     public void startWithAccountId(String accountId, JSONObject params) {
         try {
             Configuration configuration = new Configuration();
             configuration.setProjectId(accountId);
+            String urlScheme = params.getString(ANDROID_URL_SCHEME);
+            if (TextUtils.isEmpty(accountId) || TextUtils.isEmpty(urlScheme)) {
+                throw new IllegalArgumentException("accountId and urlScheme must not be null");
+            }
             if (params != null) {
                 Boolean debugMode = params.getBoolean(ENABLE_LOG);
                 if (debugMode != null) {

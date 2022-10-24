@@ -30,8 +30,15 @@
 				// androidEnableAndroidId 是否采集androidId
 				// androidEnableImei 是否采集imei
 				// androidEnableOaid 是否采集oaid
+				// androidUrlScheme android的scheme, 必填参数
 				
-				growing.startWithAccountId('9a7f70313f66fb62', {'enableLog':true, 'androidEnableAndroidId': false, 'androidEnableOaid': false, 'enableReadClipBoard': false})
+				// 使用初始化方法，需要在manifest.json中配置delay_init为true
+				growing.startWithAccountId('9a7f70313f66fb62', {
+					'enableLog':true,
+				 'androidEnableAndroidId': false, 
+				 'androidEnableOaid': false,
+				  'enableReadClipBoard': false,
+				  'androidUrlScheme': 'growing.4cf6e0a04c6a7b10'})
 			},
 			enableTest() {
 				growing.enableDataCollect();
