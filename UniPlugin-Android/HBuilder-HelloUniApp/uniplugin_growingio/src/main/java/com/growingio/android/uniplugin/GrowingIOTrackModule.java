@@ -213,6 +213,11 @@ public class GrowingIOTrackModule extends UniModule {
      * 参数与iOS保持一致
      */
     private static final String ENABLE_LOG = "enableLog";
+    // android 特有参数
+    private static final String ANDROID_ENABLE_OAID = "androidEnableOaid";
+    private static final String ANDROID_ENABLE_ANDROID_ID = "androidEnableAndroidId";
+    private static final String ANDROID_ENABLE_IMEI = "androidEnableImei";
+    private static final String ANDROID_ENABLE_READ_CLIP_BOARD = "androidEnableReadClipBoard";
     @UniJSMethod(uiThread = true)
     public void startWithAccountId(String accountId, JSONObject params) {
         try {
@@ -222,6 +227,22 @@ public class GrowingIOTrackModule extends UniModule {
                 Boolean debugMode = params.getBoolean(ENABLE_LOG);
                 if (debugMode != null) {
                     configuration.setDebugMode(debugMode);
+                }
+                Boolean oaidEnable = params.getBoolean(ANDROID_ENABLE_OAID);
+                if (oaidEnable != null) {
+                    configuration.setOAIDEnable(oaidEnable);
+                }
+                Boolean androidIdEnable = params.getBoolean(ANDROID_ENABLE_ANDROID_ID);
+                if (androidIdEnable != null) {
+                    configuration.setAndroidIdEnable(androidIdEnable);
+                }
+                Boolean imeiEnable = params.getBoolean(ANDROID_ENABLE_IMEI);
+                if (imeiEnable != null) {
+                    configuration.setImeiEnable(imeiEnable);
+                }
+                Boolean readClipBoardEnable = params.getBoolean(ANDROID_ENABLE_READ_CLIP_BOARD);
+                if (readClipBoardEnable != null) {
+                    configuration.setReadClipBoardEnable(readClipBoardEnable);
                 }
             }
             GrowingIO.startWithConfiguration((Application) mWXSDKInstance.getContext().getApplicationContext(), configuration);

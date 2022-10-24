@@ -21,7 +21,13 @@
 		},
 		methods: {
 			startTest() {
-				growing.startWithAccountId('9a7f70313f66fb62', {'enableLog':true})
+				// 支持如下配置
+				// enableLog 是否开始调试日志
+				// androidEnableAndroidId 是否采集androidId
+				// androidEnableImei 是否采集imei
+				// androidEnableOaid 是否采集oaid
+				// androidEnableReadClipBoard 是否开启延迟深度链接（涉及获取剪切板）
+				growing.startWithAccountId('9a7f70313f66fb62', {'enableLog':true, 'androidEnableAndroidId': false, 'androidEnableOaid': false, 'androidEnableReadClipBoard': false})
 			},
 			enableTest() {
 				growing.enableDataCollect();
