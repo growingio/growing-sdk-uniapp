@@ -13,8 +13,8 @@ android {
         consumerProguardFiles "consumer-rules.pro"
 
         // 请将此处修改为您的项目中对应id以及scheme
-        resValue("string", "growingio_project_id", "9926fc6c1189e2fb")
-        resValue("string", "growingio_url_scheme", "growing.4cf6e0a04c6a7b10")
+//        resValue("string", "growingio_project_id", "9926fc6c1189e2fb")
+//        resValue("string", "growingio_url_scheme", "growing.4cf6e0a04c6a7b10")
     }
 
     buildTypes {
