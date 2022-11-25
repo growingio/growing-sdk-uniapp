@@ -225,6 +225,7 @@ public class GrowingIOTrackModule extends UniModule {
             Configuration configuration = new Configuration();
             configuration.setProjectId(accountId);
             String urlScheme = params.getString(ANDROID_URL_SCHEME);
+            configuration.setURLScheme(urlScheme);
             if (TextUtils.isEmpty(accountId) || TextUtils.isEmpty(urlScheme)) {
                 throw new IllegalArgumentException("accountId and urlScheme must not be null");
             }
