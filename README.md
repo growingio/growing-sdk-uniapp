@@ -197,4 +197,4 @@ GrowingIO.getDeviceId()
 ```
 
 ### 注意事项
-1. 由于 uts 中 函数表达式定义的函数不支持默认值，并且直接导出的方法在android中无法支持默认值 ISSUE-13341，所以 trackCustomEvent 和 setLoginUserId 不能缺省参数调用
+1. 由于 uts 中 函数表达式定义的函数不支持默认值，并且直接导出的方法在android中无法支持默认值 ISSUE-13341(4.29存在该问题，4.35.2024112402-alpha版本问题已经修复)，所以 trackCustomEvent 和 setLoginUserId 不能缺省参数调用
