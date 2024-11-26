@@ -1,0 +1,95 @@
+import { GrowingTracker, GrowingTrackConfiguration } from 'GrowingAnalytics'
+// import { GrowingToolsKit } from 'GrowingToolsKit'
+import { DispatchQueue } from 'Dispatch'
+
+import { TrackConfiguration as NativeTrackConfiguration,
+	StartWithConfiguration,
+	SetDataCollectionEnabled,
+	SetLoginUserId,
+	CleanLoginUserId,
+	SetLocation,
+	TrackCustomEvent,
+	SetLoginUserAttributes,
+	GetDeviceId
+} from '../interface.uts'
+
+export const startWithConfiguration: StartWithConfiguration = function (options: NativeTrackConfiguration) {
+	if (options.accountId == null || options.urlScheme == null) {
+		console.error("accountId or urlScheme is null")
+		return
+	}
+	
+	let trackConfiguration: GrowingTrackConfiguration = new GrowingTrackConfiguration(accountId = options.accountId)
+	if (options.urlScheme != null) {
+		trackConfiguration.urlScheme = options.urlScheme
+	}
+	if (options.dataSourceId != null) {
+		trackConfiguration.dataSourceId = options.dataSourceId
+	}
+	if (options.debugEnabled != null) {
+		trackConfiguration.debugEnabled = options.debugEnabled
+	}
+	if (options.cellularDataLimit != null) {
+		trackConfiguration.cellularDataLimit = options.cellularDataLimit!.toUInt()
+	}
+	if (options.dataUploadInterval != null) {
+		trackConfiguration.dataUploadInterval = options.dataUploadInterval!.toDouble()
+	}
+	if (options.sessionInterval != null) {
+		trackConfiguration.sessionInterval = options.sessionInterval!.toDouble()
+	}
+	if (options.dataValidityPeriod != null) {
+		trackConfiguration.dataValidityPeriod = options.dataValidityPeriod!.toUInt()
+	}
+	if (options.dataCollectionEnabled != null) {
+		trackConfiguration.dataCollectionEnabled = options.dataCollectionEnabled
+	}
+	if (options.dataCollectionServerHost != null) {
+		trackConfiguration.dataCollectionServerHost = options.dataCollectionServerHost
+	}
+	if (options.idMappingEnabled != null) {
+		trackConfiguration.idMappingEnabled = options.idMappingEnabled
+	}
+	
+	// uts方法默认会在子线程中执行，涉及 UI 操作必须在主线程中运行，通过 DispatchQueue.main.async 方法可将代码在主线程中运行
+	DispatchQueue.main.async(execute=():void => {
+		GrowingTracker.start(with = trackConfiguration, launchOptions = new Map())
+		// GrowingToolsKit.start()
+	})
+}
+
+export const setDataCollectionEnabled: SetDataCollectionEnabled = function(enabled: boolean) : void {
+	GrowingTracker.sharedInstance().setDataCollectionEnabled(enabled)
+}
+
+export const setLoginUserId: SetLoginUserId = function(userId: string, userKey ?: string) : void {
+	if (userKey == null) {
+		GrowingTracker.sharedInstance().setLoginUserId(userId)
+	} else {
+		GrowingTracker.sharedInstance().setLoginUserId(userId, userKey = userKey!)
+	}
+}
+
+export const cleanLoginuserId: CleanLoginUserId = function() : void {
+	GrowingTracker.sharedInstance().cleanLoginUserId()
+}
+
+export const setLocation: SetLocation = function(latitude: number, longitude: number) : void {
+	GrowingTracker.sharedInstance().setLocation(latitude.toDouble(), longitude = longitude.toDouble())
+}
+
+export const trackCustomEvent: TrackCustomEvent = function(eventName: string, attributes ?: UTSJSONObject) : void {
+	if (attributes == null) {
+		GrowingTracker.sharedInstance().trackCustomEvent(eventName)
+	} else {
+		GrowingTracker.sharedInstance().trackCustomEvent(eventName, withAttributes = attributes!.toMap())
+	}
+}
+
+export const setLoginUserAttributes: SetLoginUserAttributes = function(attributes: UTSJSONObject) : void {
+	GrowingTracker.sharedInstance().setLoginUserAttributes(attributes.toMap())
+}
+
+export const getDeviceId: GetDeviceId = function() : string {
+	return GrowingTracker.sharedInstance().getDeviceId()
+}

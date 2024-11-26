@@ -1,0 +1,116 @@
+import TrackConfiguration from 'com.growingio.android.sdk.track.TrackConfiguration'
+import GrowingTracker from 'com.growingio.android.sdk.track.GrowingTracker'
+import HashMap from 'java.util.HashMap'
+import { UTSAndroid } from 'io.dcloud.uts'
+
+import { TrackConfiguration as NativeTrackConfiguration,
+	StartWithConfiguration,
+	SetDataCollectionEnabled,
+	SetLoginUserId,
+	CleanLoginUserId,
+	SetLocation,
+	TrackCustomEvent,
+	SetLoginUserAttributes,
+	GetDeviceId
+} from '../interface.uts'
+
+export const startWithConfiguration: StartWithConfiguration = function (options: NativeTrackConfiguration) : void {
+	if (options.accountId == null || options.urlScheme == null) {
+		console.error("accountId or urlScheme is null")
+		return
+	}
+	
+	let trackConfiguration: TrackConfiguration = new TrackConfiguration(options.accountId, options.urlScheme)
+	if (options.dataSourceId != null) {
+		trackConfiguration.setDataSourceId(options.dataSourceId)
+	}
+	if (options.debugEnabled != null) {
+		trackConfiguration.setDebugEnabled(options.debugEnabled!)
+	}
+	if (options.cellularDataLimit != null) {
+		trackConfiguration.setCellularDataLimit(options.cellularDataLimit!.toInt())
+	}
+	if (options.dataUploadInterval != null) {
+		trackConfiguration.setDataUploadInterval(options.dataUploadInterval!.toInt())
+	}
+	if (options.sessionInterval != null) {
+		trackConfiguration.setSessionInterval(options.sessionInterval!.toInt())
+	}
+	if (options.dataValidityPeriod != null) {
+		trackConfiguration.setDataValidityPeriod(options.dataValidityPeriod!.toInt())
+	}
+	if (options.dataCollectionEnabled != null) {
+		trackConfiguration.setDataCollectionEnabled(options.dataCollectionEnabled!)
+	}
+	if (options.dataCollectionServerHost != null) {
+		trackConfiguration.setDataCollectionServerHost(options.dataCollectionServerHost)
+	}
+	if (options.idMappingEnabled != null) {
+		trackConfiguration.setIdMappingEnabled(options.idMappingEnabled!)
+	}
+	if (options.channel != null) {
+		trackConfiguration.setChannel(options.channel)
+	}
+	if (options.androidIdEnabled != null) {
+		trackConfiguration.setAndroidIdEnabled(options.androidIdEnabled!)
+	}
+	if (options.imeiEnabled != null) {
+		trackConfiguration.setImeiEnabled(options.imeiEnabled!)
+	}
+	if (options.requireAppProcessesEnabled != null) {
+		trackConfiguration.setRequireAppProcessesEnabled(options.requireAppProcessesEnabled!)
+	}
+	
+	UTSAndroid.getDispatcher("main").async(function(_){
+		GrowingTracker.startWithConfiguration(UTSAndroid.getAppContext(), trackConfiguration)
+	},null)
+}
+
+export const setDataCollectionEnabled: SetDataCollectionEnabled = function(enabled: boolean) : void {
+	GrowingTracker.get().setDataCollectionEnabled(enabled)
+}
+
+export const setLoginUserId: SetLoginUserId = function(userId: string, userKey ?: string) : void {
+	if (userKey == null) {
+		GrowingTracker.get().setLoginUserId(userId)
+	} else {
+		GrowingTracker.get().setLoginUserId(userId, userKey)
+	}
+}
+
+export const cleanLoginuserId: CleanLoginUserId = function() : void {
+	GrowingTracker.get().cleanLoginUserId()
+}
+
+export const setLocation: SetLocation = function(latitude: number, longitude: number) : void {
+	GrowingTracker.get().setLocation(latitude.toDouble(), longitude.toDouble())
+}
+
+export const trackCustomEvent: TrackCustomEvent = function(eventName: string, attributes ?: UTSJSONObject) : void {
+	if (attributes == null) {
+		GrowingTracker.get().trackCustomEvent(eventName)
+	} else {
+		let map = new HashMap<string, string>()
+		attributes.toMap().forEach((value, key) => {
+			if (typeof value == 'string') {
+				map.put(key.toString(), value.toString())
+			}
+		})
+		GrowingTracker.get().trackCustomEvent(eventName, map)
+	}
+}
+
+export const setLoginUserAttributes: SetLoginUserAttributes = function(attributes: UTSJSONObject) : void {
+	// 不能直接使用uts的map类型，uts的map类型是io.dcloud.uts.Map
+	let map = new HashMap<string, string>()
+	attributes.toMap().forEach((value, key) => {
+		if (typeof value == 'string') {
+			map.put(key.toString(), value.toString())
+		}
+	})
+	GrowingTracker.get().setLoginUserAttributes(map)
+}
+
+export const getDeviceId: GetDeviceId = function() : string {
+	return GrowingTracker.get().getDeviceId()
+}

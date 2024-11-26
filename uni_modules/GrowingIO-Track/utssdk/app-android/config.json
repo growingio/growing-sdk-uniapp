@@ -1,0 +1,6 @@
+{
+  "minSdkVersion": "17",
+  "dependencies": [
+  		"com.growingio.android:tracker:4.3.2"
+  	]
+}

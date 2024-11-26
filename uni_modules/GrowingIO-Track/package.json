@@ -1,0 +1,83 @@
+{
+  "id": "GrowingIO-Track",
+  "displayName": "GrowingIO 数据采集服务",
+  "version": "1.0.0",
+  "description": "使用 uts 开发，基于 GrowingIO 官方SDK，支持 Android 和 iOS 数据采集",
+  "keywords": [
+    "GrowingIO-Track",
+	"数据采集"
+],
+  "repository": "",
+  "engines": {
+    "HBuilderX": "^3.6.8"
+  },
+  "dcloudext": {
+    "type": "uts",
+    "sale": {
+      "regular": {
+        "price": "0.00"
+      },
+      "sourcecode": {
+        "price": "0.00"
+      }
+    },
+    "contact": {
+      "qq": ""
+    },
+    "declaration": {
+      "ads": "无",
+      "data": "GrowingIO SDK隐私协议 https://accounts.growingio.com/user-privacy",
+      "permissions": "权限相关信息，参考 https://growingio.github.io/growingio-sdk-docs/knowledge/compliance/androidCompliance#%E9%87%87%E9%9B%86%E8%AF%A6%E6%83%85"
+    },
+    "npmurl": ""
+  },
+  "uni_modules": {
+    "dependencies": [],
+    "encrypt": [],
+    "platforms": {
+      "cloud": {
+        "tcb": "y",
+        "aliyun": "y",
+        "alipay": "y"
+      },
+      "client": {
+        "Vue": {
+          "vue2": "y",
+          "vue3": "y"
+        },
+        "App": {
+          "app-android": "y",
+          "app-ios": "y"
+        },
+        "H5-mobile": {
+          "Safari": "u",
+          "Android Browser": "u",
+          "微信浏览器(Android)": "u",
+          "QQ浏览器(Android)": "u"
+        },
+        "H5-pc": {
+          "Chrome": "u",
+          "IE": "u",
+          "Edge": "u",
+          "Firefox": "u",
+          "Safari": "u"
+        },
+        "小程序": {
+          "微信": "u",
+          "阿里": "u",
+          "百度": "u",
+          "字节跳动": "u",
+          "QQ": "u",
+          "钉钉": "u",
+          "快手": "u",
+          "飞书": "u",
+          "京东": "u"
+        },
+        "快应用": {
+          "华为": "u",
+          "联盟": "u"
+        }
+      }
+    }
+  }
+}

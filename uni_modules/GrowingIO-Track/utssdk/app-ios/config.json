@@ -1,0 +1,8 @@
+{
+  "deploymentTarget": "10.0",
+  "dependencies-pods": [
+  {
+	"name": "GrowingAnalytics/Tracker",
+	"version": "4.3.0"
+  }]
+}
