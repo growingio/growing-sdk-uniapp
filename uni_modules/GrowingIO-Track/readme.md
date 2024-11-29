@@ -50,7 +50,7 @@ GrowingToolsKit.start()
 
 | 配置项                   | 参数类型  | 是否必填 | 默认值  | 说明  | 版本 |
 | :-----------------------| :------: | :------: | :------: | :------ | :------ |
-| projectId             | string           |    是    | null  | 项目ID，每个应用对应唯一值 | -     |
+| accountId             | string           |    是    | null  | 项目ID，每个应用对应唯一值 | -     |
 | dataSourceId          | string           |    是    | null  | 应用的DataSourceId，唯一值        |  -  |
 | urlScheme             | string           |    是    | null  | 应用特有的URLScheme，用于外部应用拉起应用，如圈选   | -          |
 | dataCollectionServerHost  | string       |    否    | null  | 服务端部署后的 ServerHost     |  -  |
