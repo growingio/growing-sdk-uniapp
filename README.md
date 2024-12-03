@@ -26,16 +26,21 @@
 {
   "deploymentTarget": "10.0",
   "dependencies-pods": [
-  {
-	"name": "GrowingAnalytics/Tracker",
-	"version": "4.3.0"
-  },
-  // 增加 GIOKit 配置，用于查看相关 SDK 日志，避免携带到 release 环境
-  // 目前不支持 pod 额外配置，官方群反馈后续版本会支持，目前请上线 releae 时请手动删除相关配置
-  {
-	"name": "GrowingToolsKit",
-	"version": "2.0.2"
-  }]
+  	{
+  	  "name": "GrowingAnalytics/Tracker",
+  	  "version": "4.6.0-beta.1"
+  	},
+  	{
+  	  "name": "GrowingAnalytics/UniApp",
+  	  "version": "4.6.0-beta.1"
+  	}
+    // 增加 GIOKit 配置，用于查看相关 SDK 日志，避免携带到 release 环境
+    // 目前不支持 pod 额外配置，官方群反馈后续版本会支持，目前请上线 releae 时请手动删除相关配置
+    {
+	  "name": "GrowingToolsKit",
+	  "version": "2.0.2"
+    }
+  ]
 }
 ```
 2. 在 GrowingIO-Track/utsdk/app-ios/index.uts 中放开如下内容注释初始化 GIOKit

@@ -1,13 +1,13 @@
 {
   "deploymentTarget": "10.0",
   "dependencies-pods": [
-  {
-	"name": "GrowingAnalytics/Tracker",
-	"version": "4.6.0-beta.1"
-  },
-  {
-	"name": "GrowingAnalytics/UniApp",
-	"version": "4.6.0-beta.1"
-  }
+	{
+	  "name": "GrowingAnalytics/Tracker",
+	  "version": "4.6.0-beta.1"
+	},
+	{
+	  "name": "GrowingAnalytics/UniApp",
+	  "version": "4.6.0-beta.1"
+	}
   ]
 }
