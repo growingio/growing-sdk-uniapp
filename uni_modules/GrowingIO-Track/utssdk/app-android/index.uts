@@ -1,6 +1,8 @@
+import HashMap from 'java.util.HashMap'
 import TrackConfiguration from 'com.growingio.android.sdk.track.TrackConfiguration'
 import GrowingTracker from 'com.growingio.android.sdk.track.GrowingTracker'
-import HashMap from 'java.util.HashMap'
+import TrackMainThread from 'com.growingio.android.sdk.track.TrackMainThread'
+import PageEvent from 'com.growingio.android.sdk.track.events.PageEvent'
 import { UTSAndroid } from 'io.dcloud.uts'
 
 import { TrackConfiguration as NativeTrackConfiguration,
@@ -11,7 +13,8 @@ import { TrackConfiguration as NativeTrackConfiguration,
 	SetLocation,
 	TrackCustomEvent,
 	SetLoginUserAttributes,
-	GetDeviceId
+	GetDeviceId,
+	TrackPage
 } from '../interface.uts'
 
 export const startWithConfiguration: StartWithConfiguration = function (options: NativeTrackConfiguration) : void {
@@ -113,4 +116,21 @@ export const setLoginUserAttributes: SetLoginUserAttributes = function(attribute
 
 export const getDeviceId: GetDeviceId = function() : string {
 	return GrowingTracker.get().getDeviceId()
+}
+
+export const trackPage: TrackPage = function(pageName: string, attributes?: UTSJSONObject):void {
+	if (attributes == null) {
+		TrackMainThread.trackMain().postEventToTrackMain(new PageEvent.Builder()
+			.setPath(pageName))
+	} else {
+		let map = new HashMap<string, string>()
+		attributes.toMap().forEach((value, key) => {
+			if (typeof value == 'string') {
+				map.put(key.toString(), value.toString())
+			}
+		})
+		TrackMainThread.trackMain().postEventToTrackMain(new PageEvent.Builder()
+			.setPath(pageName)
+			.setAttributes(map))
+	}
 }

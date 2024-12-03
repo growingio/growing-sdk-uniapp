@@ -6,6 +6,7 @@ export type SetLocation = (latitude: number, longitude: number) => void
 export type TrackCustomEvent = (eventName: string, attributes ?: UTSJSONObject) => void
 export type SetLoginUserAttributes = (attributes : UTSJSONObject) => void
 export type GetDeviceId = () => string
+export type TrackPage = (pageName: string, attributes ?: UTSJSONObject) => void
 
 export type TrackConfiguration = {
 	accountId ?: string

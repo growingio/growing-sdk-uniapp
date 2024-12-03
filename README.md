@@ -196,5 +196,51 @@ import * as GrowingIO from "@/uni_modules/GrowingIO-Track"
 GrowingIO.getDeviceId()
 ```
 
+#### trackPage
+* 发送预置 Page 事件，数据端会依据 Page 事件计算对应访问时长
+
+| 参数         | 参数类型              | 说明         |
+| :----------- | :-------------------- | :----------- |
+| `pageName` | `string` | 页面名称 |
+| `attributes` | `UTSJSONObject` | 页面属性信息 |
+
+* 参考代码如下
+```js
+GrowingIO.trackPage('首页', {
+	'page_key': 'page_value'
+})
+```
+
 ### 注意事项
 1. 由于 uts 中 函数表达式定义的函数不支持默认值，并且直接导出的方法在android中无法支持默认值 [ISSUE-13341](https://issues.dcloud.net.cn/pages/issues/detail?id=13341) (4.29存在该问题，4.35.2024112402-alpha版本问题已经修复)，所以 trackCustomEvent 和 setLoginUserId 不能缺省参数调用
+2. 建议升级 4.36，缺省参数可不传，目前事件属性、用户属性、页面属性均要求key、value为string类型
+
+### 常见问题
+1. android 本地编译出现找不到类找不到或其他编译错误，尝试删除 HBuilderX 相关缓存以及 gradle 缓存
+```
+cd /Users/xxx/Library/Application\ Support/HBuilder\ X/
+rm -rf android_third_lib
+rm -rf .uts-development-android
+
+cd /Users/growingio/.gradle/caches/modules-2/files-2.1
+rm -rf com.growingio.android
+```
+
+2. iOS 本地编译出现 cocopods 找不到对应库，uniapp 指定 source 'https://cdn.cocoapods.org/'
+```
+# Xcode 新建一个项目，指定 source 执行 pod install
+source 'https://cdn.cocoapods.org/'
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Simple' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Simple
+pod 'GrowingAnalytics/Tracker', '4.6.0-beta.1'
+pod 'GrowingAnalytics/UniApp', '4.6.0-beta.1'
+pod 'GrowingToolsKit', '2.0.2'
+
+end
+```

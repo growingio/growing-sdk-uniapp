@@ -1,4 +1,4 @@
-import { GrowingTracker, GrowingTrackConfiguration } from 'GrowingAnalytics'
+import { GrowingTracker, GrowingTrackConfiguration, GrowingUniAppPlugin } from 'GrowingAnalytics'
 // import { GrowingToolsKit } from 'GrowingToolsKit'
 import { DispatchQueue } from 'Dispatch'
 
@@ -10,7 +10,8 @@ import { TrackConfiguration as NativeTrackConfiguration,
 	SetLocation,
 	TrackCustomEvent,
 	SetLoginUserAttributes,
-	GetDeviceId
+	GetDeviceId,
+	TrackPage
 } from '../interface.uts'
 
 export const startWithConfiguration: StartWithConfiguration = function (options: NativeTrackConfiguration) {
@@ -92,4 +93,18 @@ export const setLoginUserAttributes: SetLoginUserAttributes = function(attribute
 
 export const getDeviceId: GetDeviceId = function() : string {
 	return GrowingTracker.sharedInstance().getDeviceId()
+}
+
+export const trackPage: TrackPage = function(pageName: string, attributes?: UTSJSONObject):void {
+	if (attributes == null) {
+		GrowingUniAppPlugin.sharedInstance().trackPageEvent(pageName, attributes = new Map())
+	} else {
+		let map: Map<string,string> = new Map()
+		attributes!.toMap().forEach((value, key) => {
+			if (typeof value == 'string') {
+				map.set(key, value as string)
+			}
+		})
+		GrowingUniAppPlugin.sharedInstance().trackPageEvent(pageName, attributes = map)
+	}
 }

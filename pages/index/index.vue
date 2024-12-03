@@ -8,6 +8,7 @@
 		<button @tap="trackCustomEvent">测试埋点</button>
 		<button @tap="setLoginUserAttributes">设置用户属性</button>
 		<button @tap="getDeviceId">获取设备ID</button>
+		<button @tap="trackPage">发送预定义page事件</button>
 	</view>
 </template>
 
@@ -64,6 +65,11 @@
 			},
 			getDeviceId() {
 				console.log(GrowingIO.getDeviceId())
+			},
+			trackPage() {
+				GrowingIO.trackPage('首页', {
+					'page_key': 'page_value'
+				})
 			}
 		}
 	}
