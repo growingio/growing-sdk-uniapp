@@ -64,7 +64,12 @@
 				})
 			},
 			getDeviceId() {
-				console.log(GrowingIO.getDeviceId())
+				GrowingIO.getDeviceId()
+				.then(data => {
+					console.log(data);
+				}).catch(e => {
+					console.log(e);
+				})
 			},
 			trackPage() {
 				GrowingIO.trackPage('首页', {

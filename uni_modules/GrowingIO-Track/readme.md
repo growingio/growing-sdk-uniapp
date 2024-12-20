@@ -199,6 +199,11 @@ GrowingIO.setLoginUserAttributes({
 import * as GrowingIO from "@/uni_modules/GrowingIO-Track"
 
 GrowingIO.getDeviceId()
+.then(data => {
+	console.log(data);
+}).catch(e => {
+	console.log(e);
+})
 ```
 
 #### trackPage

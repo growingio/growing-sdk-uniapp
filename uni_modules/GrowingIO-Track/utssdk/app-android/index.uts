@@ -70,67 +70,88 @@ export const startWithConfiguration: StartWithConfiguration = function (options:
 }
 
 export const setDataCollectionEnabled: SetDataCollectionEnabled = function(enabled: boolean) : void {
-	GrowingTracker.get().setDataCollectionEnabled(enabled)
+	UTSAndroid.getDispatcher("main").async(function(_){
+		GrowingTracker.get().setDataCollectionEnabled(enabled)
+	},null)
 }
 
 export const setLoginUserId: SetLoginUserId = function(userId: string, userKey ?: string) : void {
-	if (userKey == null) {
-		GrowingTracker.get().setLoginUserId(userId)
-	} else {
-		GrowingTracker.get().setLoginUserId(userId, userKey)
-	}
+	UTSAndroid.getDispatcher("main").async(function(_){
+		if (userKey == null) {
+			GrowingTracker.get().setLoginUserId(userId)
+		} else {
+			GrowingTracker.get().setLoginUserId(userId, userKey)
+		}
+	},null)
 }
 
 export const cleanLoginuserId: CleanLoginUserId = function() : void {
-	GrowingTracker.get().cleanLoginUserId()
+	UTSAndroid.getDispatcher("main").async(function(_){
+		GrowingTracker.get().cleanLoginUserId()
+	},null)
 }
 
 export const setLocation: SetLocation = function(latitude: number, longitude: number) : void {
-	GrowingTracker.get().setLocation(latitude.toDouble(), longitude.toDouble())
+	UTSAndroid.getDispatcher("main").async(function(_){
+		GrowingTracker.get().setLocation(latitude.toDouble(), longitude.toDouble())
+	},null)
 }
 
 export const trackCustomEvent: TrackCustomEvent = function(eventName: string, attributes ?: UTSJSONObject) : void {
-	if (attributes == null) {
-		GrowingTracker.get().trackCustomEvent(eventName)
-	} else {
-		let map = new HashMap<string, string>()
-		attributes.toMap().forEach((value, key) => {
-			if (typeof value == 'string') {
-				map.put(key.toString(), value.toString())
-			}
-		})
-		GrowingTracker.get().trackCustomEvent(eventName, map)
-	}
+	UTSAndroid.getDispatcher("main").async(function(_){
+		if (attributes == null) {
+			GrowingTracker.get().trackCustomEvent(eventName)
+		} else {
+			let map = new HashMap<string, string>()
+			attributes.toMap().forEach((value, key) => {
+				if (typeof value == 'string') {
+					map.put(key.toString(), value.toString())
+				}
+			})
+			GrowingTracker.get().trackCustomEvent(eventName, map)
+		}
+	},null)
 }
 
 export const setLoginUserAttributes: SetLoginUserAttributes = function(attributes: UTSJSONObject) : void {
-	// 不能直接使用uts的map类型，uts的map类型是io.dcloud.uts.Map
-	let map = new HashMap<string, string>()
-	attributes.toMap().forEach((value, key) => {
-		if (typeof value == 'string') {
-			map.put(key.toString(), value.toString())
-		}
-	})
-	GrowingTracker.get().setLoginUserAttributes(map)
-}
-
-export const getDeviceId: GetDeviceId = function() : string {
-	return GrowingTracker.get().getDeviceId()
-}
-
-export const trackPage: TrackPage = function(pageName: string, attributes?: UTSJSONObject):void {
-	if (attributes == null) {
-		TrackMainThread.trackMain().postEventToTrackMain(new PageEvent.Builder()
-			.setPath(pageName))
-	} else {
+	UTSAndroid.getDispatcher("main").async(function(_){
+		// 不能直接使用uts的map类型，uts的map类型是io.dcloud.uts.Map
 		let map = new HashMap<string, string>()
 		attributes.toMap().forEach((value, key) => {
 			if (typeof value == 'string') {
 				map.put(key.toString(), value.toString())
 			}
 		})
-		TrackMainThread.trackMain().postEventToTrackMain(new PageEvent.Builder()
-			.setPath(pageName)
-			.setAttributes(map))
-	}
+		GrowingTracker.get().setLoginUserAttributes(map)
+	},null)
+}
+
+export const getDeviceId: GetDeviceId = function() : Promise<string> {
+	return new Promise<string>((resolve, reject) => {
+		UTSAndroid.getDispatcher("main").async(function(_){
+			resolve(GrowingTracker.get().getDeviceId())
+		},null)
+		setTimeout(() => {
+		    reject("get device_id failed");
+		}, 1000)
+	})
+}
+
+export const trackPage: TrackPage = function(pageName: string, attributes?: UTSJSONObject):void {
+	UTSAndroid.getDispatcher("main").async(function(_){
+		if (attributes == null) {
+			TrackMainThread.trackMain().postEventToTrackMain(new PageEvent.Builder()
+				.setPath(pageName))
+		} else {
+			let map = new HashMap<string, string>()
+			attributes.toMap().forEach((value, key) => {
+				if (typeof value == 'string') {
+					map.put(key.toString(), value.toString())
+				}
+			})
+			TrackMainThread.trackMain().postEventToTrackMain(new PageEvent.Builder()
+				.setPath(pageName)
+				.setAttributes(map))
+		}
+	},null)
 }
