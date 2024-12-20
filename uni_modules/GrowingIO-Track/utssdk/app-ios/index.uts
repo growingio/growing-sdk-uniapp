@@ -60,51 +60,72 @@ export const startWithConfiguration: StartWithConfiguration = function (options:
 }
 
 export const setDataCollectionEnabled: SetDataCollectionEnabled = function(enabled: boolean) : void {
-	GrowingTracker.sharedInstance().setDataCollectionEnabled(enabled)
+	DispatchQueue.main.async(execute=():void => {
+		GrowingTracker.sharedInstance().setDataCollectionEnabled(enabled)
+	})
 }
 
 export const setLoginUserId: SetLoginUserId = function(userId: string, userKey ?: string) : void {
-	if (userKey == null) {
-		GrowingTracker.sharedInstance().setLoginUserId(userId)
-	} else {
-		GrowingTracker.sharedInstance().setLoginUserId(userId, userKey = userKey!)
-	}
+	DispatchQueue.main.async(execute=():void => {
+		if (userKey == null) {
+			GrowingTracker.sharedInstance().setLoginUserId(userId)
+		} else {
+			GrowingTracker.sharedInstance().setLoginUserId(userId, userKey = userKey!)
+		}
+	})
 }
 
 export const cleanLoginuserId: CleanLoginUserId = function() : void {
-	GrowingTracker.sharedInstance().cleanLoginUserId()
+	DispatchQueue.main.async(execute=():void => {
+		GrowingTracker.sharedInstance().cleanLoginUserId()
+	})
 }
 
 export const setLocation: SetLocation = function(latitude: number, longitude: number) : void {
-	GrowingTracker.sharedInstance().setLocation(latitude.toDouble(), longitude = longitude.toDouble())
+	DispatchQueue.main.async(execute=():void => {
+		GrowingTracker.sharedInstance().setLocation(latitude.toDouble(), longitude = longitude.toDouble())
+	})
 }
 
 export const trackCustomEvent: TrackCustomEvent = function(eventName: string, attributes ?: UTSJSONObject) : void {
-	if (attributes == null) {
-		GrowingTracker.sharedInstance().trackCustomEvent(eventName)
-	} else {
-		GrowingTracker.sharedInstance().trackCustomEvent(eventName, withAttributes = attributes!.toMap())
-	}
+	DispatchQueue.main.async(execute=():void => {
+		if (attributes == null) {
+			GrowingTracker.sharedInstance().trackCustomEvent(eventName)
+		} else {
+			GrowingTracker.sharedInstance().trackCustomEvent(eventName, withAttributes = attributes!.toMap())
+		}
+	})
 }
 
 export const setLoginUserAttributes: SetLoginUserAttributes = function(attributes: UTSJSONObject) : void {
-	GrowingTracker.sharedInstance().setLoginUserAttributes(attributes.toMap())
+	DispatchQueue.main.async(execute=():void => {
+		GrowingTracker.sharedInstance().setLoginUserAttributes(attributes.toMap())
+	})
 }
 
-export const getDeviceId: GetDeviceId = function() : string {
-	return GrowingTracker.sharedInstance().getDeviceId()
+export const getDeviceId: GetDeviceId = function() : Promise<string> {
+	return new Promise<string>((resolve, reject) => {
+		DispatchQueue.main.async(execute=():void => {
+			resolve(GrowingTracker.sharedInstance().getDeviceId())
+		})
+		setTimeout(() => {
+		    reject("get device_id failed");
+		}, 1000)
+	})
 }
 
 export const trackPage: TrackPage = function(pageName: string, attributes?: UTSJSONObject):void {
-	if (attributes == null) {
-		GrowingUniAppPlugin.sharedInstance().trackPageEvent(pageName, attributes = new Map())
-	} else {
-		let map: Map<string,string> = new Map()
-		attributes!.toMap().forEach((value, key) => {
-			if (typeof value == 'string') {
-				map.set(key, value as string)
-			}
-		})
-		GrowingUniAppPlugin.sharedInstance().trackPageEvent(pageName, attributes = map)
-	}
+	DispatchQueue.main.async(execute=():void => {
+		if (attributes == null) {
+			GrowingUniAppPlugin.sharedInstance().trackPageEvent(pageName, attributes = new Map())
+		} else {
+			let map: Map<string,string> = new Map()
+			attributes!.toMap().forEach((value, key) => {
+				if (typeof value == 'string') {
+					map.set(key, value as string)
+				}
+			})
+			GrowingUniAppPlugin.sharedInstance().trackPageEvent(pageName, attributes = map)
+		}
+	})
 }
