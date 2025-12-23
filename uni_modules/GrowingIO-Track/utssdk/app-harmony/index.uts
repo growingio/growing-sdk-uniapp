@@ -1,4 +1,4 @@
-import { GrowingAnalytics, GrowingConfig } from '@growingio/analytics'
+import { GrowingAnalytics, GrowingConfig, GrowingUniAppPlugin } from '@growingio/analytics'
 import window from '@ohos.window'
 
 import { TrackConfiguration as NativeTrackConfiguration,
@@ -30,7 +30,7 @@ export const startWithConfiguration: StartWithConfiguration = function (options:
 		return
 	}
 	
-	let config: GrowingConfig = new GrowingConfig().NewSaas(
+	let config: GrowingConfig = new GrowingConfig().NewSaaS(
 		options.accountId,
 		options.dataSourceId,
 		options.urlScheme
@@ -39,13 +39,13 @@ export const startWithConfiguration: StartWithConfiguration = function (options:
 		config.debugEnabled = options.debugEnabled
 	}
 	if (options.dataUploadInterval != null) {
-		config.dataUploadInterval = options.dataUploadInterval!.toDouble()
+		config.dataUploadInterval = options.dataUploadInterval!
 	}
 	if (options.sessionInterval != null) {
-		config.sessionInterval = options.sessionInterval!.toDouble()
+		config.sessionInterval = options.sessionInterval!
 	}
 	if (options.dataValidityPeriod != null) {
-		config.dataValidityPeriod = options.dataValidityPeriod!.toUInt()
+		config.dataValidityPeriod = options.dataValidityPeriod!
 	}
 	if (options.dataCollectionEnabled != null) {
 		config.dataCollectionEnabled = options.dataCollectionEnabled
@@ -74,25 +74,35 @@ export const cleanLoginuserId: CleanLoginUserId = function() : void {
 }
 
 export const setLocation: SetLocation = function(latitude: number, longitude: number) : void {
-	GrowingAnalytics.setLocation(latitude.toDouble(), longitude.toDouble())
+	GrowingAnalytics.setLocation(latitude, longitude)
 }
 
-export const trackCustomEvent: TrackCustomEvent = function(eventName: string, attributes ?: UTSJSONObject) : void {
+export const trackCustomEvent: TrackCustomEvent = function(eventName: string, attributes?: UTSJSONObject) : void {
 	if (attributes == null) {
 		GrowingAnalytics.track(eventName)
 	} else {
-		GrowingAnalytics.track(eventName, attributes!.toMap())
+		GrowingAnalytics.track(eventName, JSON.parse(JSON.stringify(attributes)))
 	}
 }
 
 export const setLoginUserAttributes: SetLoginUserAttributes = function(attributes: UTSJSONObject) : void {
-	GrowingAnalytics.setLoginUserAttributes(attributes.toMap())
+	GrowingAnalytics.setLoginUserAttributes(JSON.parse(JSON.stringify(attributes)))
 }
 
 export const getDeviceId: GetDeviceId = function() : Promise<string> {
-	return GrowingAnalytics.getDeviceId()
+	return Promise.resolve(GrowingAnalytics.getDeviceId())
 }
 
 export const trackPage: TrackPage = function(pageName: string, attributes?: UTSJSONObject):void {
+	const argument = new Map<string, any>()
 	
+	argument.set('path', pageName)
+	
+	let attributesToMap = new Map<string, any>()
+	for (const key in attributes) {
+	  attributesToMap.set(key, attributes[key])
+	}
+	argument.set('attributes', attributesToMap)
+	
+	GrowingUniAppPlugin.trackUniAppPage(argument)
 }
