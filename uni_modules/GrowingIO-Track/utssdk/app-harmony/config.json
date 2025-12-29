@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "@growingio/analytics": "2.7.0"
+	"@growingio/analytics": "2.8.0"
   }
 }

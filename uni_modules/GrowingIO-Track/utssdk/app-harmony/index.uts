@@ -94,15 +94,5 @@ export const getDeviceId: GetDeviceId = function() : Promise<string> {
 }
 
 export const trackPage: TrackPage = function(pageName: string, attributes?: UTSJSONObject):void {
-	const argument = new Map<string, any>()
-	
-	argument.set('path', pageName)
-	
-	let attributesToMap = new Map<string, any>()
-	for (const key in attributes) {
-	  attributesToMap.set(key, attributes[key])
-	}
-	argument.set('attributes', attributesToMap)
-	
-	GrowingUniAppPlugin.trackUniAppPage(argument)
+	GrowingUniAppPlugin.trackUniAppPage(pageName, JSON.parse(JSON.stringify(attributes)))
 }
