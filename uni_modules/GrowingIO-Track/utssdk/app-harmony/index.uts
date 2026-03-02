@@ -1,5 +1,7 @@
 import { GrowingAnalytics, GrowingConfig, GrowingUniAppPlugin } from '@growingio/analytics'
 import window from '@ohos.window'
+import Want from '@ohos.app.ability.Want'
+import AbilityConstant from '@ohos.app.ability.AbilityConstant'
 
 import { TrackConfiguration as NativeTrackConfiguration,
 	StartWithConfiguration,
@@ -17,6 +19,20 @@ let _window : window.Window
 
 UTSHarmony.onAppAbilityWindowStageCreate((windowStage : window.WindowStage) => {
 	_window = windowStage.getMainWindowSync()
+})
+
+UTSHarmony.onAppAbilityCreate((want: Want, launchParam: AbilityConstant.LaunchParam) => {
+	let uri = want?.uri
+	if (uri) {
+	  GrowingAnalytics.handleOpenURL(uri)
+	}
+})
+
+UTSHarmony.onAppAbilityNewWant((want: Want, launchParam: AbilityConstant.LaunchParam) => {
+	let uri = want?.uri
+	if (uri) {
+	  GrowingAnalytics.handleOpenURL(uri)
+	}
 })
 
 export const startWithConfiguration: StartWithConfiguration = function (options: NativeTrackConfiguration) {

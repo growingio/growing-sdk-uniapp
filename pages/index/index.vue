@@ -23,9 +23,9 @@
 		},
 		onLoad() {
 			GrowingIO.startWithConfiguration({
-				accountId: 'a12345678',
-				urlScheme: 'u12345678',
-				dataSourceId: 'd12345678',
+				accountId: '0a1b4118dd954ec3bcc69da5138bdb96',
+				urlScheme: 'growing.0689441a04b84d7e',
+				dataSourceId: 'b5a1ba108b7cddf9',
 				debugEnabled: true,
 				cellularDataLimit: 10 + 1,
 				dataUploadInterval: 15 + 1,
