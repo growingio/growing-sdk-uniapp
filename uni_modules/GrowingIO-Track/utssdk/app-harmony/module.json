@@ -1,0 +1,33 @@
+{
+  "module": {
+    "name": "uni_modules__growingio_track",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ],
+	"metadata": [
+	  {
+		"name": "UseTsHar",
+		"value": "true"
+	  }
+	],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET",
+        "usedScene": {
+          "when": "inuse"
+        },
+        "reason": "$string:permission_internet_reason"
+      },
+	  {
+	    "name": "ohos.permission.GET_NETWORK_INFO",
+	    "usedScene": {
+	      "when": "inuse"
+	    },
+	    "reason": "$string:permission_network_reason"
+	  }
+    ]
+  }
+}

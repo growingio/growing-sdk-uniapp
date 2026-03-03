@@ -1,8 +1,8 @@
 {
   "id": "GrowingIO-Track",
   "displayName": "GrowingIO 数据采集服务",
-  "version": "1.0.0",
-  "description": "使用 uts 开发，基于 GrowingIO 官方SDK，支持 Android 和 iOS 数据采集",
+  "version": "1.1.0",
+  "description": "使用 uts 开发，基于 GrowingIO 官方SDK，支持 Android、HarmonyOS 和 iOS 数据采集",
   "keywords": [
     "GrowingIO-Track",
 	"数据采集"

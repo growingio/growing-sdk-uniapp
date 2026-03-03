@@ -48,6 +48,8 @@
 import { GrowingToolsKit } from 'GrowingToolsKit'
 GrowingToolsKit.start()
 ```
+* HarmonyOS
+通过 HBuilderX 或 DevEco Studio 查看相关 SDK 日志
 
 ### SDK API
 #### startWithConfiguration
